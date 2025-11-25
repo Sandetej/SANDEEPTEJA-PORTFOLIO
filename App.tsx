@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { 
   Github, Linkedin, Mail, Download, MapPin, Phone, ExternalLink, 
@@ -7,7 +6,7 @@ import {
 } from 'lucide-react';
 import { RESUME_DATA } from './constants';
 import SkillChart from './components/SkillChart';
-import ChatWidget from './components/ChatWidget';
+// import ChatWidget from './components/ChatWidget';
 
 const App: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -507,7 +506,7 @@ const App: React.FC = () => {
       </footer>
 
       {/* Chat Widget */}
-      <ChatWidget />
+      {/*<ChatWidget /> */}
     </div>
   );
 };
