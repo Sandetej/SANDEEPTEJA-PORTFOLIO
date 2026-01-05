@@ -44,9 +44,10 @@ export const RESUME_DATA = {
       role: "Data Scientist Intern",
       period: "Jan 2025 – Present",
       description: [
-        "Optimized venue and staffing decisions by 40% and reduced annual costs by $250,000 by developing time-series attendance forecasting models in Python and SQL on historical event data.",
-        "Boosted member retention from 78% to 85% in 4 months by building Power BI dashboards tracking engagement across 150+ events, enabling faster, data-driven decisions.",
-        "Cut membership processing time by 75% (4 days → 1 day) and increased satisfaction scores by 22% by automating membership workflows on AWS with Agentic AI, handling 1,465+ transactions per year."
+        "Developed time-series attendance forecasting models using Python (Prophet, ARIMA) and SQL, optimizing venue and staffing decisions by 40% and reducing annual costs by $250,000.",
+        "Applied causal inference techniques (propensity score matching, difference-in-differences) to measure true impact of marketing campaigns on member retention, isolating a 12% lift attributable to targeted outreach.",
+        "Designed interactive Power BI dashboards tracking member engagement across 150+ events, boosting retention from 78% to 85% in 4 months through data-driven outreach strategies.",
+        "Automated membership workflows using Agentic AI on AWS Lambda, cutting processing time by 75% (4 days → 1 day) and increasing satisfaction scores by 22% for 1,465+ annual transactions."
       ]
     },
     {
@@ -54,27 +55,35 @@ export const RESUME_DATA = {
       role: "Data Scientist II",
       period: "May 2021 – Nov 2023",
       description: [
-        "Trained and deployed fraud and credit risk models (PD, LGD, EAD) on AWS SageMaker, increasing instant approval accuracy by 6% while keeping real-time decision latency under 80 ms.",
-        "Built PySpark data pipelines processing 2.8M+ daily events and loading 15 TB+ monthly data into Snowflake to power model training and feature generation.",
-        "Drove $1.2M+ in revenue-impacting product decisions and improved customer engagement by 23% by deploying BERT-based sentiment models (91% accuracy) and real-time personalization pipelines.",
-        "Cut ML deployment cycles from 3 weeks to 4 days and kept 8+ production models running at 99.7% availability by leading MLOps adoption with FastAPI, Docker, and CI/CD.",
-        "Reduced model-related production incidents by 45% by implementing ML governance, monitoring, and drift detection using Evidently."
+        "Trained and deployed production fraud detection and credit risk models (PD, LGD, EAD) using Scikit-learn, XGBoost, and AWS SageMaker, achieving 6% improvement in instant approval accuracy while maintaining <80ms real-time inference latency.",
+        "Architected PySpark data pipelines orchestrated with Apache Airflow, processing 2.8M+ daily events and loading 15TB+ monthly datainto Snowflake to power feature engineering, model training, and performance monitoring.",
+        "Deployed BERT-based sentiment analysis models (91% accuracy) with continuous monitoring for model drift and bias detection, driving $1.2M+ revenue impact and 23% improvement in customer engagement.",
+        "Led MLOps transformation using FastAPI, Docker, MLflow, and CI/CD pipelines, compressing deployment cycles by 80% (3 weeks to 4 days) while maintaining 99.7% availability across 8+ production models.",
+        "Engineered unified PySpark feature store serving both real-time SageMaker APIs and batch scoring jobs, reducing model developmenttime by 35% and eliminating duplicate feature engineering work.",
+        "Implemented ML governance using Evidently and WhyLabs for drift detection, bias monitoring, and data quality checks, reducing model-related production incidents by 45% through automated alerts and retraining workflows."
       ]
     },
     {
       company: "Capgemini",
-      role: "Data Scientist",
+      role: "Associate Data Scientist",
       period: "Jan 2020 – Apr 2021",
       description: [
-        "Improved data completeness and consistency by 30% by extracting, cleaning, and validating 1M+ records from 5+ data sources using SQL and Python for downstream analysis.",
-        "Increased model accuracy/AUC by 12% using statistical methods and ML techniques such as hypothesis testing, clustering, and PCA to refine 10+ predictive models.",
-        "Streamlined reporting by reducing manual effort by 40% through 8+ interactive Power BI dashboards that enabled faster decisions for non-technical stakeholders across 3+ teams.",
-        "Influenced key KPIs such as conversion and churn by collaborating on 5+ cross-functional projects, presenting clear, action-oriented insights to data scientists, engineers, and business partners.",
-        "Decreased data and logic problems by 25% and maintained stable model performance by helping deploy and monitor 5+ production models using GitHub and structured validation trackers."
-      ]
+        "Improved model accuracy (AUC) by 12% using statistical methods including hypothesis testing, clustering (K-means), and PCA for dimensionality reduction across 10+ predictive models.",
+        "Constructed ETL pipelines using Python and SQL to extract, clean, and validate 1M+ records from 5+ data sources, improving data completeness and consistency by 30%.",
+        "Created 8+ interactive Power BI dashboards for non-technical stakeholders, reducing manual reporting effort by 40% and enabling faster data-driven decisions across 3+ teams.",
+        "Collaborated on 5+ cross-functional projects, presenting actionable insights to data scientists, engineers, and business partners, influencing key KPIs including conversion and churn."
     }
   ] as Experience[],
   projects: [
+    {
+      title: "E-Commerce Analytics Medallion with GenAI Recommendation Engine",
+      period: "Nov 2025 – Dec 2025",
+      category: "GenAI",
+      technologies: ["Databricks", "PySpark", "Delta Lake", "Spark SQL", "MLlib (ALS)", "MLflow", "Unity Catalog", "Claude API"],
+      problem: "E-commerce companies struggle to process millions of raw transactions scattered across systems, lacking unified customer insights and personalized recommendations. Manual reporting delays decision-making while customers receive generic, non-personalized shopping experiences.",
+      solution: "Built a Databricks medallion data lakehouse (Bronze/Silver/Gold) that ingests 5M+ transactions, calculates customer lifetime value, and trains an ALS recommendation model (RMSE: 0.82). Integrated Claude LLM API to generate personalized product descriptions for 100K+ customer profiles across 4 CLV segments.",
+      impact: "Accelerated analytical query performance by 70% through Z-ordering and partitioning, enabling real-time insights via 3 production dashboards. Delivered personalized top-10 recommendations per customer with AI-powered explanations, transforming raw data into actionable business intelligence."
+    },
     {
       title: "Banking Conversational AI Chatbot",
       period: "Aug 2025 – Oct 2025",
@@ -148,7 +157,8 @@ export const RESUME_DATA = {
   ] as Education[],
   achievements: [
     "Best Employee of the Quarter (ADF Data Science Pvt Ltd): Awarded for exceptional contributions in improving machine learning workflows.",
-    "Zolve Emerging Scholar Award – Spring 2024 | Zolve: Received a $1,000 scholarship to support Master's studies at Northern Illinois University, recognizing vision, goals, and achievements."
+    "Zolve Emerging Scholar Award – Spring 2024 | Zolve: Received a $1,000 scholarship to support Master's studies at Northern Illinois University, recognizing vision, goals, and achievements.",
+    "Graduate Teaching Assistant (Northern Illinois University): Mentored 130+ students in Python programming and applied machine learning coursework."
   ]
 };
 
