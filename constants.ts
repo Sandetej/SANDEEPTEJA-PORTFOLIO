@@ -72,6 +72,7 @@ export const RESUME_DATA = {
         "Constructed ETL pipelines using Python and SQL to extract, clean, and validate 1M+ records from 5+ data sources, improving data completeness and consistency by 30%.",
         "Created 8+ interactive Power BI dashboards for non-technical stakeholders, reducing manual reporting effort by 40% and enabling faster data-driven decisions across 3+ teams.",
         "Collaborated on 5+ cross-functional projects, presenting actionable insights to data scientists, engineers, and business partners, influencing key KPIs including conversion and churn."
+        ]
     }
   ] as Experience[],
   projects: [
