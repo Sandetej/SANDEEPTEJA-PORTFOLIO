@@ -41,8 +41,8 @@ export const RESUME_DATA = {
   experience: [
     {
       company: "Sports Car Club of America",
-      role: "Data Scientist Intern",
-      period: "Jan 2025 – Present",
+      role: "Machine Learning Engineer Intern",
+      period: "Jan 2025 – Dec  2025",
       description: [
         "Developed time-series attendance forecasting models using Python (Prophet, ARIMA) and SQL, optimizing venue and staffing decisions by 40% and reducing annual costs by $250,000.",
         "Applied causal inference techniques (propensity score matching, difference-in-differences) to measure true impact of marketing campaigns on member retention, isolating a 12% lift attributable to targeted outreach.",
@@ -52,7 +52,7 @@ export const RESUME_DATA = {
     },
     {
       company: "ADF Data Science Pvt Ltd",
-      role: "Data Scientist II",
+      role: "Senior Machine Learning Engineer",
       period: "May 2021 – Nov 2023",
       description: [
         "Trained and deployed production fraud detection and credit risk models (PD, LGD, EAD) using Scikit-learn, XGBoost, and AWS SageMaker, achieving 6% improvement in instant approval accuracy while maintaining <80ms real-time inference latency.",
@@ -65,7 +65,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Capgemini",
-      role: "Associate Data Scientist",
+      role: "Associate Machine Learning Engineer ",
       period: "Jan 2020 – Apr 2021",
       description: [
         "Improved model accuracy (AUC) by 12% using statistical methods including hypothesis testing, clustering (K-means), and PCA for dimensionality reduction across 10+ predictive models.",
