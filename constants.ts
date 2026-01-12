@@ -40,38 +40,49 @@ export const RESUME_DATA = {
   ] as SkillCategory[],
   experience: [
     {
+      company: "Northern Illinois University",
+      role: "Graduate Research Assistant",
+      period: "Aug 2024 – Dec  2025",
+      description: [
+        "Developed NLP pipeline for text classification and NER on 100K+ scientific articles using TensorFlow and Hugging Face Transformers, fine-tuning BERT/RoBERTa with LoRA to achieve 89% F1-score on held-out test set.",
+        "Architected scalable data ingestion system using Python (Pandas, NumPy) and SQL, reducing manual curation time by 60% and enabling reproducible model training across 3 concurrent research projects.",
+        "Engineered statistical evaluation framework (hypothesis testing, confidence intervals) adopted lab-wide in Fall 2024, cutting model validation cycles by 40% and standardizing comparison across 5+ experimental conditions.",
+        "Launched Streamlit dashboard for real-time research visualization used by 8 faculty/researchers; presented findings at 4 departmental seminars and contributed analysis that secured $50K grant renewal."
+      ]
+    },
+    {
       company: "Sports Car Club of America",
-      role: "Machine Learning Engineer Intern",
+      role: "Data Scientist Intern",
       period: "Jan 2025 – Dec  2025",
       description: [
-        "Developed time-series attendance forecasting models using Python (Prophet, ARIMA) and SQL, optimizing venue and staffing decisions by 40% and reducing annual costs by $250,000.",
-        "Applied causal inference techniques (propensity score matching, difference-in-differences) to measure true impact of marketing campaigns on member retention, isolating a 12% lift attributable to targeted outreach.",
-        "Designed interactive Power BI dashboards tracking member engagement across 150+ events, boosting retention from 78% to 85% in 4 months through data-driven outreach strategies.",
-        "Automated membership workflows using Agentic AI on AWS Lambda, cutting processing time by 75% (4 days → 1 day) and increasing satisfaction scores by 22% for 1,465+ annual transactions."
+        "Owned time-series attendance forecasting (Prophet, LightGBM) with walk-forward validation, reducing staffing over-allocation by 40% and projecting $70K annualized savings based on historical staffing cost model.",
+        "Executed personalization experiments and causal inference analysis (propensity score matching, diff-in-diff) for 3 marketing campaigns, isolating 12% retention lift and redirecting $80K budget toward highest-ROI segments.",
+        "Designed Power BI and Tableau dashboards tracking 150+ events for executive stakeholders, translating business requirements into real-time alerts that lifted member retention from 78% to 85% in 4 months.",
+        "Reduced membership processing time from 4 days to 1 day (+22% satisfaction) by engineering workflow with AWS Lambda and LLM orchestration for document parsing and validation."
       ]
     },
     {
       company: "ADF Data Science Pvt Ltd",
-      role: "Senior Machine Learning Engineer",
+      role: "Data Scientist II",
       period: "May 2021 – Nov 2023",
       description: [
-        "Trained and deployed production fraud detection and credit risk models (PD, LGD, EAD) using Scikit-learn, XGBoost, and AWS SageMaker, achieving 6% improvement in instant approval accuracy while maintaining <80ms real-time inference latency.",
-        "Architected PySpark data pipelines orchestrated with Apache Airflow, processing 2.8M+ daily events and loading 15TB+ monthly datainto Snowflake to power feature engineering, model training, and performance monitoring.",
-        "Deployed BERT-based sentiment analysis models (91% accuracy) with continuous monitoring for model drift and bias detection, driving $1.2M+ revenue impact and 23% improvement in customer engagement.",
-        "Led MLOps transformation using FastAPI, Docker, MLflow, and CI/CD pipelines, compressing deployment cycles by 80% (3 weeks to 4 days) while maintaining 99.7% availability across 8+ production models.",
-        "Engineered unified PySpark feature store serving both real-time SageMaker APIs and batch scoring jobs, reducing model developmenttime by 35% and eliminating duplicate feature engineering work.",
-        "Implemented ML governance using Evidently and WhyLabs for drift detection, bias monitoring, and data quality checks, reducing model-related production incidents by 45% through automated alerts and retraining workflows."
+        "Owned fraud detection and credit risk modeling (PD, LGD, EAD) using Scikit-learn, XGBoost, and AWS SageMaker with time-based holdout validation, delivering 6% accuracy lift across 2.8M+ daily transactions while maintaining 80ms latency.",
+        "Implemented SHAP-based model explainability for fraud and credit models, enabling regulatory compliance and stakeholder trust in model-driven decisioning.",
+        "Architected PySpark data pipelines with dbt transformations orchestrated via Apache Airflow, processing 15TB+ monthly data into Snowflake (S3 staging) and reducing data-to-model latency by 50%.",
+        "Deployed BERT-based sentiment models (91% accuracy) to production with Weights & Biases experiment tracking; integrated outputs into retention decisioning, driving $1.2M+ revenue impact and 23% engagement lift within 6 months.",
+        "Led cross-functional MLOps transformation with Engineering and DevOps stakeholders (FastAPI, Docker, Kubernetes, MLflow, CI/CD), compressing release cycles from 3 weeks to 4 days while maintaining 99.7% availability across 8 models.",
+        "Designed unified Feast feature store with 200+ engineered features serving real-time SageMaker APIs and batch jobs, adopted by 3 ML teams, reducing new model development time by 35%.",
+        "Established ML governance program with Risk and Compliance using Evidently, WhyLabs, and Great Expectations, reducing production incidents by 45% through scheduled drift alerts and retraining triggers."
       ]
     },
     {
       company: "Capgemini",
-      role: "Associate Machine Learning Engineer ",
+      role: "Data Scientist",
       period: "Jan 2020 – Apr 2021",
       description: [
-        "Improved model accuracy (AUC) by 12% using statistical methods including hypothesis testing, clustering (K-means), and PCA for dimensionality reduction across 10+ predictive models.",
-        "Constructed ETL pipelines using Python and SQL to extract, clean, and validate 1M+ records from 5+ data sources, improving data completeness and consistency by 30%.",
-        "Created 8+ interactive Power BI dashboards for non-technical stakeholders, reducing manual reporting effort by 40% and enabling faster data-driven decisions across 3+ teams.",
-        "Collaborated on 5+ cross-functional projects, presenting actionable insights to data scientists, engineers, and business partners, influencing key KPIs including conversion and churn."
+        "Delivered 12% AUC improvement across 10+ predictive models (churn, segmentation, propensity) for 3 enterprise clients using hypothesis testing, K-means clustering, and PCA, deployed on Azure ML within 6-month engagement cycles.",
+        "Architected modular ETL pipelines processing 1M+ records from MySQL/MongoDB sources with programmatic data validation, eliminating 30% data quality issues and cutting downstream reporting prep time by 40%.",
+        "Managed Power BI dashboard suite (8+ dashboards) for cross-functional stakeholders, directly influencing customer conversion and churn reduction KPIs across 3 business units.",
         ]
     }
   ] as Experience[],
@@ -145,8 +156,8 @@ export const RESUME_DATA = {
       university: "Northern Illinois University",
       degree: "Master of Science (MS) in Computer Science (Data Science)",
       location: "DeKalb, Illinois",
-      gpa: "3.72",
-      period: "Jan 2024 – Dec 2025 (Expected)"
+      gpa: "3.73",
+      period: "Jan 2024 – Dec 2025"
     },
     {
       university: "Sathyabama Institute of Science and Technology",
