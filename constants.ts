@@ -92,18 +92,18 @@ export const RESUME_DATA = {
       period: "Nov 2025 – Dec 2025",
       category: "GenAI",
       technologies: ["Databricks", "PySpark", "Delta Lake", "Spark SQL", "MLlib (ALS)", "MLflow", "Unity Catalog", "Claude API"],
-      problem: "E-commerce companies struggle to process millions of raw transactions scattered across systems, lacking unified customer insights and personalized recommendations. Manual reporting delays decision-making while customers receive generic, non-personalized shopping experiences.",
-      solution: "Built a Databricks medallion data lakehouse (Bronze/Silver/Gold) that ingests 5M+ transactions, calculates customer lifetime value, and trains an ALS recommendation model (RMSE: 0.82). Integrated Claude LLM API to generate personalized product descriptions for 100K+ customer profiles across 4 CLV segments.",
-      impact: "Accelerated analytical query performance by 70% through Z-ordering and partitioning, enabling real-time insights via 3 production dashboards. Delivered personalized top-10 recommendations per customer with AI-powered explanations, transforming raw data into actionable business intelligence."
+      problem: "E-commerce companies struggle to unify scattered transaction data and deliver personalized recommendations at scale.",
+      solution: "Built Databricks medallion lakehouse (Bronze/Silver/Gold) processing 5M+ transactions with Delta Lake CDC and SCD Type 2 tracking. Trained ALS recommendation model and integrated Claude LLM API for AI-powered product descriptions.",
+      impact: "Achieved RMSE 0.82 on 100K customers, reduced query latency by 70% via Z-ordering, and enabled real-time personalized recommendations with governance compliance."
     },
     {
       title: "Banking Conversational AI Chatbot",
       period: "Aug 2025 – Oct 2025",
       category: "GenAI",
       technologies: ["Python", "DistilBERT", "FastAPI", "spaCy", "Hugging Face"],
-      problem: "Need for an automated banking assistant to handle customer intents efficiently and securely.",
-      solution: "Developed an end-to-end chatbot using FastAPI and Transformers, classifying 77 intents. Implemented multi-turn dialog management, context retention, and PII redaction.",
-      impact: "Raised F1 score from 80% to 92.4%. Achieved 85% successful dialogs and <5% fallback rate across 200+ red-team tests."
+      problem: "Need for automated banking assistant to handle customer intents efficiently and securely.",
+      solution: "Built multi-agent conversational AI with intent classification, entity extraction, and response generation using PyTorch and DistilBERT. Deployed on GCP Vertex AI with observability monitoring.",
+      impact: "Achieved 92.4% F1-score across 77 intents, 85% successful dialogs at sub-50ms latency, and zero data leaks across 200+ red-team tests."
     },
     {
       title: "Financial Document Summarization System",
@@ -121,7 +121,7 @@ export const RESUME_DATA = {
       technologies: ["Python", "SQL", "Time-Series Analysis"],
       problem: "Inefficient venue and staffing allocation due to unpredictable event attendance.",
       solution: "Developed forecasting models on historical event data to predict attendance trends.",
-      impact: "Optimized venue/staffing decisions by 40% and reduced annual costs by $250,000."
+      impact: "Reduced staffing over-allocation by 40% and projected $70K annualized savings."
     },
     {
       title: "Automated Membership Agent",
