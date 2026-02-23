@@ -2,11 +2,11 @@ import React from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer, PolarRadiusAxis } from 'recharts';
 
 const data = [
-  { subject: 'Python/SQL', A: 120, fullMark: 150 },
-  { subject: 'ML/Stats', A: 110, fullMark: 150 },
+  { subject: 'Python/SQL', A: 130, fullMark: 150 },
+  { subject: 'ML/Deep Learning', A: 125, fullMark: 150 },
   { subject: 'GenAI/LLM', A: 130, fullMark: 150 },
-  { subject: 'MLOps/AWS', A: 100, fullMark: 150 },
-  { subject: 'Big Data', A: 90, fullMark: 150 },
+  { subject: 'A/B & Stats', A: 120, fullMark: 150 },
+  { subject: 'MLOps/Cloud', A: 115, fullMark: 150 },
   { subject: 'Visualization', A: 110, fullMark: 150 },
 ];
 
