@@ -142,7 +142,7 @@ const App: React.FC = () => {
             </a>
             
             <a 
-              href="https://drive.google.com/file/d/1WZGsWIeUNU3OCNKHzceqEvbiPqolsfmP/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1h32MUzc95OtZ5eOpBMw4TNHEGgy-PLpI/view?usp=sharing" 
               download="Sandeepteja_Sundara_Resume.pdf"
               className="flex items-center gap-2 px-8 py-4 bg-slate-800/50 hover:bg-slate-700/50 text-slate-200 rounded-xl transition-all border border-slate-700 hover:border-slate-500 backdrop-blur-sm font-medium hover:-translate-y-1 group"
             >
@@ -495,7 +495,7 @@ const App: React.FC = () => {
              <a href={`https://${RESUME_DATA.personal.github}`} className="text-slate-400 hover:text-white transition-colors flex items-center gap-2">
               <Github size={18} /> GitHub
             </a>
-            <a href="/Sandeepteja_Sundara_Resume.pdf" download="Sandeepteja_Sundara_Resume.pdf" className="text-slate-400 hover:text-primary-400 transition-colors flex items-center gap-2">
+            <a href="https://drive.google.com/file/d/1h32MUzc95OtZ5eOpBMw4TNHEGgy-PLpI/view?usp=sharing" download="Sandeepteja_Sundara_Resume.pdf" className="text-slate-400 hover:text-primary-400 transition-colors flex items-center gap-2">
               <Download size={18} /> Resume
             </a>
           </div>
