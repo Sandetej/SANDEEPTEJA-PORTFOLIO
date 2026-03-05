@@ -10,83 +10,73 @@ export const RESUME_DATA = {
     phone: "+1 (779) 775-7725",
     linkedin: "linkedin.com/in/sundara-sandeepteja",
     github: "github.com/Sandetej",
-    summary: "Data Scientist with 4+ years designing, implementing, and evaluating ML models — from traditional machine learning to deep learning to LLMs — processing 2.8M+ daily transactions at sub-100ms latency. Delivered $1.2M+ client impact through production-grade RAG pipelines and compressed deployment cycles by 80% via API-based model serving. MS in Computer Science with expertise in A/B testing, model explainability, inference optimization, and translating business questions into analytical approaches."
+    summary: "Data Scientist with 4+ years of experience shipping production ML and Generative AI systems that drove $5M+ in measurable business impact across legal analytics, retail supply chain, and financial services. Currently building RAG pipelines, fine-tuned transformer models, and LLM evaluation frameworks at Thomson Reuters, powering automated contract review workflows processing 35K+ legal documents daily. Proven record of designing causal inference and Bayesian experimentation frameworks, improving forecast accuracy by 14%, and reducing compliance review time by 28%. MS in Computer Science from Northern Illinois University."
   },
   skills: [
     {
-      name: "Programming & Data",
-      skills: ["Python", "SQL", "PySpark", "Pandas", "NumPy", "SciPy", "Git", "Unit Testing"]
+      name: "Programming & Databases",
+      skills: ["Python", "SQL", "Window Functions", "CTEs", "Query Optimization", "Git"]
     },
     {
-      name: "ML & Deep Learning",
-      skills: ["Scikit-learn", "XGBoost", "LightGBM", "PyTorch", "TensorFlow", "Predictive Modeling", "Classification", "Regression", "Clustering", "SHAP", "Model Explainability", "Bias Detection", "Transformers", "BERT"]
+      name: "Machine Learning",
+      skills: ["Scikit-learn", "Regression & Classification", "Clustering", "XGBoost", "LightGBM", "Time-Series Forecasting", "ARIMA", "Prophet", "SHAP", "Model Explainability"]
     },
     {
-      name: "NLP & Generative AI",
-      skills: ["RAG Pipelines", "LangChain", "LLM Orchestration", "Fine-tuning (LoRA/QLoRA)", "Quantization", "Prompt Engineering", "Hugging Face", "GPT-4", "Claude", "Vector DBs (FAISS, Pinecone)"]
+      name: "Deep Learning & NLP",
+      skills: ["PyTorch", "TensorFlow", "Hugging Face Transformers", "LSTM", "Transformers", "BERT", "RoBERTa", "DistilBERT"]
     },
     {
-      name: "Experimentation & Statistics",
-      skills: ["A/B Testing", "Hypothesis Testing", "Causal Inference", "Experimental Design", "Statistical Modeling"]
+      name: "LLMs & Generative AI",
+      skills: ["GPT-4", "Fine-Tuning (LoRA/QLoRA)", "LLM Evaluation (DeepEval)", "LLM Guardrails", "RAG Pipelines", "Prompt Engineering", "LangChain", "LangGraph", "CrewAI", "Vector Databases (FAISS)"]
     },
     {
-      name: "MLOps & Deployment",
-      skills: ["Model APIs", "Batch Pipelines", "MLflow", "Databricks", "Apache Airflow", "Docker", "Kubernetes", "CI/CD", "Drift Monitoring"]
+      name: "Data Engineering & Experimentation",
+      skills: ["Databricks", "Spark", "dbt", "Airflow", "Kafka", "A/B Testing", "Causal Inference", "Bayesian Experimentation"]
     },
     {
-      name: "Cloud Platforms",
-      skills: ["AWS (SageMaker, Bedrock, S3, Lambda)", "GCP (Vertex AI, BigQuery)", "Azure ML"]
-    },
-    {
-      name: "Visualization & BI",
-      skills: ["Tableau", "Power BI", "Streamlit", "Plotly"]
+      name: "Cloud & MLOps",
+      skills: ["AWS (SageMaker, Bedrock, S3)", "GCP (Vertex AI)", "MLflow", "Docker", "Kubernetes", "CI/CD", "Drift Monitoring", "LLMOps"]
     }
   ] as SkillCategory[],
   experience: [
     {
-      company: "Northern Illinois University",
-      role: "Graduate Research Assistant",
-      period: "Aug 2024 – Dec 2025",
-      description: [
-        "Architected NLP pipeline for biomedical text classification and NER on 100K+ PubMed articles using TensorFlow and Hugging Face; fine-tuned BERT/RoBERTa with LoRA, achieving 89% F1-score and enabling automated literature review for drug discovery research.",
-        "Designed scalable data ingestion framework (Python, Pandas, SQL) serving 3 concurrent research teams, cutting manual curation by 60% and establishing reproducible ML experiment workflows now used as lab standard.",
-        "Developed statistical evaluation framework (hypothesis testing, confidence intervals, effect size analysis) that lowered model validation time by 40%, implemented as standard methodology across 5+ experimental conditions.",
-        "Produced Streamlit monitoring dashboard for real-time research metrics visualization; documented assumptions and communicated findings to faculty leadership, directly contributing to successful $50K grant renewal."
-      ]
-    },
-    {
-      company: "Sports Car Club of America",
-      role: "Data Scientist Intern",
-      period: "May 2025 – Aug 2025",
-      description: [
-        "Owned time-series forecasting system (Prophet, LightGBM, walk-forward validation) that decreased event staffing over-allocation by 40%, validated through rigorous A/B testing against 2 years of historical data with projected $70K annual cost savings.",
-        "Conducted causal inference analysis (propensity score matching, difference-in-differences) for marketing campaigns across 15K+ members, isolating 12% retention lift and informing $80K budget reallocation toward highest-ROI segments.",
-        "Built executive analytics suite (Power BI, Tableau) tracking 150+ annual events with real-time KPI alerts; translated complex analytical results into actionable business recommendations that improved member retention from 78% to 85%.",
-        "Automated membership document processing using AWS Lambda and LLM orchestration (entity extraction, validation), compressing processing time from 4 days to 1 day."
-      ]
-    },
-    {
-      company: "Applied Data Finance (Fintech)",
+      company: "Thomson Reuters",
       role: "Data Scientist II",
-      period: "May 2021 – Nov 2023",
+      period: "Aug 2025 – Present",
       description: [
-        "Owned fraud detection and credit risk models using Scikit-learn, XGBoost, and AWS SageMaker with time-based holdout validation, delivering 6% accuracy lift across 2.8M+ daily transactions while optimizing inference latency to 80ms.",
-        "Implemented SHAP-based model explainability ensuring bias-free, interpretable models for regulatory compliance and stakeholder trust in model-driven decisioning across multiple business units.",
-        "Orchestrated PySpark data pipelines via Apache Airflow, processing 15TB+ monthly data into Snowflake (S3 staging) and minimizing data-to-model latency by 50%.",
-        "Deployed BERT-based sentiment models (91% accuracy) via REST APIs with Weights & Biases experiment tracking; integrated outputs into retention decisioning, driving $1.2M+ revenue impact within 6 months.",
-        "Led cross-functional MLOps transformation with Engineering stakeholders (FastAPI, Docker, Kubernetes, MLflow, CI/CD), compressing release cycles from 3 weeks to 4 days while maintaining 99.7% availability across 8 models.",
-        "Designed unified feature store with 200+ engineered features serving real-time SageMaker APIs and batch pipelines, adopted by 3 ML teams and shortening new model development time by 35%.",
-        "Established drift monitoring program using Evidently, WhyLabs, and Great Expectations, eliminating 45% of production incidents through scheduled alerts and retraining triggers."
+        "Developed RoBERTa-based classification models using PyTorch on 600K+ annotated legal clauses, boosting AI-driven risk tagging accuracy by 15% and saving 40 hours weekly in manual enterprise compliance reviews.",
+        "Engineered a scalable Retrieval-Augmented Generation (RAG) pipeline integrating FAISS, LangChain, and context engineering (adaptive chunking, metadata-enriched retrieval), reducing multinational compliance review times by 28% and irrelevant passage injection by 40%.",
+        "Fine-tuned jurisdiction-specific BERT models using LoRA on regulatory datasets across 8 jurisdictions, increasing obligation clause extraction recall by 12% and expanding scalable compliance coverage to 3 new regulatory frameworks.",
+        "Engineered structured prompt chains with few-shot exemplars and schema-constrained output parsing to standardize GPT-4 contract clause extraction, achieving 92% format compliance across 12 contract types and reducing downstream manual correction by 45%.",
+        "Architected Dockerized inference services on Kubernetes handling 35K+ daily legal document requests, reducing procurement contract turnaround from 5 days to 2 days and enabling corporate governance teams to close quarterly audits 40% faster.",
+        "Implemented algorithmic evaluation pipelines utilizing DeepEval to establish deterministic output guardrails, reducing GPT-4 hallucination rates by 35% in production contract summarization.",
+        "Presented quarterly model performance reviews to legal operations leadership, translating precision-recall trade-offs into contract risk exposure terms that secured executive buy-in for a $500K+ model infrastructure investment.",
+        "Deployed automated drift monitoring and CI/CD retraining pipelines via MLflow, maintaining 90% classification F1-scores during quarterly regulatory shifts and saving 15 manual engineering hours per cycle."
       ]
     },
     {
-      company: "Capgemini (Consulting)",
+      company: "HCL Technologies",
       role: "Data Scientist",
-      period: "Jan 2020 – Apr 2021",
+      period: "Oct 2020 – Dec 2023",
       description: [
-        "Delivered 12% AUC improvement across 10+ predictive models (churn, segmentation, propensity) for 3 enterprise clients using hypothesis testing, K-means clustering, and PCA, deployed on Azure ML within 6-month engagement cycles.",
-        "Constructed modular ETL pipelines processing 1M+ records from MySQL/MongoDB sources with programmatic data validation, eliminating 30% data quality issues.",
-        "Managed Power BI dashboard suite (8+ dashboards) for cross-functional stakeholders, translating analytical insights into clear, actionable recommendations across 3 business units."
+        "Benchmarked Prophet, LSTM, and Temporal Fusion Transformer approaches against XGBoost baselines on 1.1M+ retail transactions, improving 8-week demand forecast accuracy by 14% on high-volatility SKUs and reducing seasonal stockouts by 22%.",
+        "Constructed real-time and batch feature pipelines using Kafka, Spark Streaming, and PySpark, processing 800K+ daily transactions and reducing excess inventory by 11% across 6 fulfillment centers, freeing $2.4M in working capital.",
+        "Designed controlled A/B experiments with causal inference validation (difference-in-differences, synthetic controls) across 200+ SKUs, isolating 7% incremental lift in average order value and informing $1.2M+ promotional budget reallocation.",
+        "Pioneered a Bayesian experimentation framework with adaptive stopping rules for pricing rollouts, reducing experiment runtime by 35% while maintaining 95% statistical power and enabling 3x more concurrent tests per quarter.",
+        "Deployed LightGBM-based lifetime value scoring in production batch pipelines, driving $1.8M in promotional spend reallocation and lifting high-value customer retention by 9%.",
+        "Delivered SHAP-based explainability dashboards for XGBoost pricing models, driving merchandising team model adoption from 40% to 85% and reducing stakeholder approval cycles by 20%.",
+        "Mentored 3 junior data scientists on NLP model development and production deployment best practices, establishing peer code review standards that reduced model deployment defects by 30% across the team."
+      ]
+    },
+    {
+      company: "Tata Consultancy Services",
+      role: "Data Analyst",
+      period: "Jan 2020 – Sep 2020",
+      description: [
+        "Segmented 450K+ banking customers into 4 behavioral cohorts using clustering, propensity modeling, and advanced SQL (CTEs, window functions), lifting premium card upgrade conversions by 12% and retention campaign response rates by 16%.",
+        "Built a hybrid recommendation engine using collaborative filtering and behavioral embeddings for digital banking cross-sell, increasing click-through rates by 15% and generating $500K in incremental quarterly revenue.",
+        "Trained logistic regression and gradient boosted models for early-warning credit deterioration scoring across 120K+ accounts, enabling preemptive limit adjustments that reduced 60-day delinquency transitions by 10%.",
+        "Established standardized ML experiment tracking using MLflow with Airflow-orchestrated retraining schedules for a 5-person analytics team, reducing onboarding ramp-up by 30% and accelerating time-to-production for new credit models by 25%."
       ]
     }
   ] as Experience[],
@@ -95,19 +85,19 @@ export const RESUME_DATA = {
       title: "E-Commerce Analytics Lakehouse with GenAI Recommendations",
       period: "Nov 2025 – Dec 2025",
       category: "GenAI",
-      technologies: ["Databricks", "PySpark", "Delta Lake", "Spark SQL", "MLlib (ALS)", "MLflow", "Unity Catalog", "Claude API (Bedrock)"],
+      technologies: ["Databricks", "PySpark", "Delta Lake", "dbt", "MLlib (ALS)", "MLflow", "Unity Catalog", "Claude API (Bedrock)"],
       problem: "E-commerce companies struggle to unify scattered transaction data, ensure governance compliance, and deliver personalized recommendations at scale.",
-      solution: "Built end-to-end Databricks medallion lakehouse (Bronze/Silver/Gold) processing 5M+ transactions with Delta Lake CDC, SCD Type 2 tracking, and PII masking. Engineered ALS collaborative filtering model on 100K+ customer-product interactions; integrated Claude API via AWS Bedrock.",
-      impact: "Achieved RMSE 0.82 (15% better than baseline), 70% latency improvement via optimized partitioning, and real-time personalized recommendations with full governance compliance."
+      solution: "Established an end-to-end Databricks Medallion lakehouse processing 5M+ records with Delta Lake CDC, dbt transformations, and PII masking. Integrated Claude API via AWS Bedrock to generate GenAI-powered product descriptions.",
+      impact: "Achieved 70% reduction in recommendation-to-display latency through optimized partitioning, with full governance compliance and real-time personalized recommendations."
     },
     {
       title: "Banking Intent Classifier with Agentic AI Architecture",
-      period: "Aug 2025 – Oct 2025",
-      category: "GenAI",
-      technologies: ["PyTorch", "DistilBERT", "Multi-Agent Framework", "FastAPI", "GCP Vertex AI"],
+      period: "May 2025 – Jun 2025",
+      category: "Agentic AI",
+      technologies: ["PyTorch", "DistilBERT", "CrewAI", "LangGraph", "FastAPI", "GCP Vertex AI"],
       problem: "Need for automated banking assistant to accurately classify customer intents and handle multi-turn dialogs securely at scale.",
-      solution: "Constructed agentic AI system with intent classification, entity extraction, and response generation using fine-tuned DistilBERT. Shipped model via API on GCP Vertex AI with observability monitoring.",
-      impact: "Achieved 92.4% F1-score across 77 banking intents (Banking77 benchmark), 85% successful dialog completion at sub-50ms latency, and zero data leaks across 200+ red-team tests."
+      solution: "Constructed a multi-agent AI system utilizing CrewAI and LangGraph for intent classification and response generation. Shipped fine-tuned DistilBERT via API on GCP Vertex AI with observability monitoring.",
+      impact: "Achieved 98% F1-score on the Banking77 benchmark, 85% successful dialog completion at sub-50ms latency, and zero data leaks across 200+ red-team tests."
     },
     {
       title: "Financial Document RAG System (GPT-4 + Llama 3)",
@@ -117,42 +107,6 @@ export const RESUME_DATA = {
       problem: "Time-consuming manual review of SEC 10-K/10-Q filings by analysts, with existing automated tools prone to hallucinations.",
       solution: "Assembled production-grade RAG pipeline using LangChain with hybrid search (BM25 + FAISS/Pinecone). Configured local Llama 3 with quantization for cost-efficient inference; incorporated Cohere Rerank with retrieval evaluation.",
       impact: "Achieved 92% metric extraction accuracy with LLM quality assessment to minimize hallucinations. Local Llama 3 cut inference costs 60%; Cohere Rerank improved retrieval precision by 23% over fixed-size chunking baselines."
-    },
-    {
-      title: "Time-Series Attendance Forecasting",
-      period: "Jan 2025 – Present",
-      category: "Forecasting",
-      technologies: ["Python", "SQL", "Time-Series Analysis"],
-      problem: "Inefficient venue and staffing allocation due to unpredictable event attendance.",
-      solution: "Developed forecasting models on historical event data to predict attendance trends.",
-      impact: "Reduced staffing over-allocation by 40% and projected $70K annualized savings."
-    },
-    {
-      title: "Automated Membership Agent",
-      period: "Jan 2025 – Present",
-      category: "Agentic AI",
-      technologies: ["AWS", "Agentic AI", "Python"],
-      problem: "Slow manual membership processing leading to lower satisfaction.",
-      solution: "Automated membership workflows on AWS using Agentic AI handling 1,465+ transactions/year.",
-      impact: "Cut processing time by 75% (4 days to 1 day) and increased satisfaction scores by 22%."
-    },
-    {
-      title: "Credit Risk & Fraud Detection System",
-      period: "May 2021 – Nov 2023",
-      category: "Fintech",
-      technologies: ["AWS SageMaker", "Python", "Scikit-learn"],
-      problem: "Need for accurate, real-time credit risk assessment (PD, LGD, EAD).",
-      solution: "Trained and deployed predictive models on SageMaker with low-latency inference endpoints.",
-      impact: "Increased approval accuracy by 6% with <80ms latency, supporting real-time decisions."
-    },
-    {
-      title: "Sentiment Analysis & Personalization",
-      period: "May 2021 – Nov 2023",
-      category: "NLP",
-      technologies: ["BERT", "Spark", "Kubernetes", "AWS"],
-      problem: "Lack of insight into customer sentiment and personalized product offerings.",
-      solution: "Deployed BERT-based sentiment models and personalization pipelines on Spark/K8s.",
-      impact: "Drove $1.2M+ revenue impact, improved engagement by 23%, and achieved 91% model accuracy."
     }
   ] as Project[],
   education: [
@@ -172,49 +126,45 @@ export const RESUME_DATA = {
     }
   ] as Education[],
   achievements: [
-    "Best Employee of the Quarter (ADF Data Science Pvt Ltd): Awarded for exceptional contributions in improving machine learning workflows.",
+    "Best Employee of the Quarter (HCL Technologies): Awarded for exceptional contributions in improving machine learning workflows.",
     "Zolve Emerging Scholar Award – Spring 2024 | Zolve: Received a $1,000 scholarship to support Master's studies at Northern Illinois University, recognizing vision, goals, and achievements.",
     "Graduate Teaching Assistant (Northern Illinois University): Mentored 130+ students in Python programming and applied machine learning coursework."
   ],
   narrative: {
-    careerJourney: `Sandeepteja's career is a deliberate, three-phase arc — from consulting breadth, to production-scale depth, to academic rigor — each stage chosen intentionally to become a more complete data scientist.
+    careerJourney: `Sandeepteja's career is a deliberate arc — from analytics foundations, to production-scale ML, to graduate research, to cutting-edge GenAI — each stage chosen intentionally to become a more complete data scientist.
 
-Phase 1 – Capgemini (Jan 2020 – Apr 2021): Sandeepteja started right out of undergrad in a consulting environment, working across three enterprise clients in different industries simultaneously. He learned to walk into unfamiliar problems, translate business questions into analytical approaches, and deliver measurable results within tight six-month engagement cycles. The key lesson: technical work is only valuable if you can explain it to someone who doesn't speak your language. He built ETL pipelines, churn/segmentation/propensity models, and Power BI dashboards — owning the full stack from raw data to executive decisions. This is where he built cross-industry adaptability and consulting instincts.
+Phase 1 – Tata Consultancy Services (Jan 2020 – Sep 2020): Sandeepteja started right out of undergrad at TCS, building customer segmentation and recommendation systems for banking clients. He learned to translate business questions into analytical approaches using advanced SQL, clustering, and propensity modeling. The key lesson: data is most valuable when it's actionable and personalized. This is where he built his foundation in ML and analytical thinking.
 
-Phase 2 – ADF Data Science (May 2021 – Nov 2023): After ~18 months at Capgemini, Sandeepteja deliberately chose to go deep in production. He wanted to own a system that handled millions of transactions a day, see what breaks under real scale, and learn how to maintain models in production — not just hand them off after six months. At ADF he rebuilt fraud detection and credit risk models for 2.8M+ daily transactions, led an MLOps transformation that cut release cycles from 3 weeks to 4 days, built a feature store adopted by 3 teams, implemented SHAP-based explainability for regulatory compliance, and deployed BERT sentiment models that drove $1.2M+ revenue impact. The biggest lesson: the model is 20% of the problem. The other 80% is infrastructure, monitoring, and collaboration. He evolved from someone who builds models to someone who builds systems.
+Phase 2 – HCL Technologies (Oct 2020 – Dec 2023): Sandeepteja deliberately moved into large-scale ML production work. He owned end-to-end forecasting and experimentation systems for retail supply chain, processing 800K+ daily transactions. He built Bayesian experimentation frameworks, SHAP explainability dashboards, and Kafka/Spark pipelines that freed $2.4M in working capital. The biggest lesson: the model is 20% of the problem — the other 80% is data engineering, experimentation rigor, and stakeholder adoption.
 
-Phase 3 – Master's at NIU + GRA + SCCA Internship (Jan 2024 – Dec 2025): After 3.5 years in industry, Sandeepteja recognized a gap. The field was evolving fast — especially large language models and generative AI — and he wanted a stronger theoretical foundation to push into next-generation problems. He completed his MS in Computer Science (Data Science) at Northern Illinois University in December 2025 with a 3.73 GPA. As a GRA, he built NLP pipelines fine-tuning BERT/RoBERTa on 100K+ biomedical articles for drug discovery research, designed shared data infrastructure, and established statistical evaluation frameworks that contributed to a $50K grant renewal. During his internship at SCCA, he applied the full toolkit — time-series forecasting, causal inference, executive dashboards, and LLM-based document automation — to a non-technical organization, proving that data science can transform operations in any industry.`,
+Phase 3 – MS at NIU (Jan 2024 – Dec 2025): After 3+ years in industry, Sandeepteja pursued his Master's in Computer Science at Northern Illinois University to build deeper expertise in LLMs and generative AI, graduating in December 2025 with a 3.73 GPA.
 
-    whyMasters: `After 3.5 years of industry experience at Capgemini and ADF, Sandeepteja made a deliberate decision to pursue his Master's in Computer Science (Data Science) at Northern Illinois University. The decision was driven by a clear gap he recognized: the field was evolving rapidly, especially with the rise of large language models and generative AI, and he wanted a stronger theoretical foundation — deeper knowledge of NLP, deep learning, and statistical methods — to push into the next generation of problems. Grad school wasn't a step back or a career reset. It was a calculated accelerator. He wanted to combine his hands-on production experience with rigorous academic depth, so he could operate at the leading edge of what's possible. He graduated in December 2025 with a 3.73 GPA and the theoretical depth to match his production-hardened intuition — and is now actively seeking full-time opportunities.`,
+Phase 4 – Thomson Reuters (Aug 2025 – Present): Now building production RAG pipelines, fine-tuned transformer models, and LLM evaluation frameworks for automated legal contract review, processing 35K+ documents daily and driving $5M+ in measurable business impact.`,
 
-    careerGoal: `Sandeepteja is seeking a full-time Data Scientist or ML Engineer role where he can combine his consulting adaptability, production-scale systems thinking, and GenAI depth to solve complex, high-impact problems. He's drawn to roles that require the full stack — from translating ambiguous business questions into analytical approaches, through building and deploying models, to communicating results in a way that drives actual decisions. He's especially excited about the intersection of consulting breadth and technical depth: working across different industries, solving novel problems, and building production-grade AI systems — particularly involving LLMs, RAG pipelines, agentic AI, and model explainability. Long-term, he wants to grow into a senior or staff-level role where he shapes not just individual models, but the data culture and ML infrastructure of an organization.`,
+    whyMasters: `After 3+ years of production ML experience at TCS and HCL Technologies, Sandeepteja made a deliberate decision to pursue his Master's in Computer Science (Data Science) at Northern Illinois University. The decision was driven by a clear gap he recognized: the field was evolving rapidly, especially with the rise of large language models and generative AI, and he wanted a stronger theoretical foundation — deeper knowledge of NLP, deep learning, and statistical methods — to push into the next generation of problems. Grad school wasn't a step back or a career reset. It was a calculated accelerator. He wanted to combine his hands-on production experience with rigorous academic depth, so he could operate at the leading edge of what's possible. He graduated in December 2025 with a 3.73 GPA and is now applying that depth at Thomson Reuters, building LLM systems that process 35K+ legal documents daily.`,
 
-    workStyle: `Sandeepteja is known for being a full-stack data scientist in the truest sense — comfortable owning everything from messy raw data to executive dashboards. Colleagues describe him as someone who bridges the gap between technical and non-technical stakeholders naturally; he can spend the morning debugging a PySpark pipeline and the afternoon presenting business recommendations to a VP. He's a strong communicator who believes the best data science work is explainable, reproducible, and built for the people who'll use it after you move on. He thrives in fast-paced environments with high ambiguity, having operated as a one-person data team at SCCA and as a cross-functional lead at ADF simultaneously working with engineering, compliance, and business stakeholders. He documents assumptions rigorously, validates results statistically, and doesn't ship a model without thinking about monitoring, explainability, and maintenance. He gets better fastest when surrounded by people who push him — which is why he's always sought out environments with strong technical culture.`,
+    careerGoal: `Sandeepteja is a Data Scientist II at Thomson Reuters, currently building production GenAI systems for automated legal contract review. He's driven to continue pushing the boundaries of LLM applications — RAG pipelines, fine-tuned transformer models, and LLM evaluation frameworks — while growing into senior or staff-level roles where he shapes not just individual models, but the data culture and ML infrastructure of an organization. He's especially excited about high-impact problems that require the full stack: from translating ambiguous business requirements into analytical approaches, through building and deploying models, to communicating results that drive multi-million dollar decisions.`,
+
+    workStyle: `Sandeepteja is known for being a full-stack data scientist in the truest sense — comfortable owning everything from messy raw data to executive dashboards. Colleagues describe him as someone who bridges the gap between technical and non-technical stakeholders naturally; he can spend the morning fine-tuning a RoBERTa model and the afternoon presenting model performance reviews to legal operations leadership. He's a strong communicator who believes the best data science work is explainable, reproducible, and built for the people who'll use it. He thrives in fast-paced environments with high ambiguity — at Thomson Reuters he presents quarterly model performance reviews that translate precision-recall trade-offs into contract risk exposure terms, securing executive buy-in for $500K+ infrastructure investments. He documents assumptions rigorously, validates results statistically, and doesn't ship a model without thinking about monitoring, explainability, and maintenance.`,
 
     companyStories: {
-      capgemini: {
-        situation: "Three enterprise clients across different industries sitting on massive customer data with no reliable way to predict behavior. Churn was high, segmentation was intuition-based, marketing spend wasn't optimized. Data infrastructure was messy — records scattered across MySQL and MongoDB with significant quality issues.",
-        task: "Build clean data foundations via ETL pipelines, design and evaluate models for churn prediction, customer segmentation, and propensity scoring, and make insights accessible to non-technical stakeholders across three business units — all within six-month engagement cycles.",
-        action: "Built modular, reusable ETL pipelines with programmatic validation. Applied hypothesis testing, K-means clustering, PCA, and 10+ model configurations evaluated with AUC on Azure ML. Built and managed 8+ Power BI dashboards tailored to each business unit. Spent significant time in cross-functional meetings translating model outputs into actionable business decisions.",
-        result: "12% AUC improvement across 10+ models. Eliminated 30% of data quality issues. Dashboards became go-to decision tools across 3 business units. All delivered within six-month timelines. This is where he learned cross-industry adaptability and the consulting muscle of translating business problems into analytical solutions."
+      thomsonReuters: {
+        situation: "Thomson Reuters legal operations teams manually reviewing thousands of complex contracts across multiple jurisdictions. Compliance review was slow, inconsistent, and prone to error — 5-day procurement contract turnarounds and quarterly audits taking weeks to close.",
+        task: "Build production-grade AI systems to automate legal clause extraction, risk tagging, and contract summarization at scale — processing 35K+ documents daily while maintaining accuracy and reducing hallucination rates.",
+        action: "Developed RoBERTa-based classification models on 600K+ annotated legal clauses. Engineered scalable RAG pipeline with FAISS, LangChain, and adaptive chunking. Fine-tuned BERT models with LoRA across 8 jurisdictions. Built structured GPT-4 prompt chains with schema-constrained output parsing. Architected Dockerized inference services on Kubernetes. Implemented DeepEval evaluation pipelines for hallucination guardrails.",
+        result: "15% boost in AI-driven risk tagging accuracy. 28% reduction in compliance review times. 92% format compliance across 12 contract types. Hallucination rates down 35%. Procurement turnaround: 5 days → 2 days. Secured $500K+ model infrastructure investment."
       },
-      adf: {
-        situation: "Fintech company processing 2.8M+ daily transactions with underperforming fraud and credit risk models, zero MLOps infrastructure (3-week deployment cycles), no feature store, no drift monitoring, and data science/engineering working in silos. Regulatory scrutiny required model explainability.",
-        task: "Overhaul fraud and credit risk models to improve accuracy at sub-100ms inference latency. Ensure regulatory-grade explainability. Lead a cross-functional MLOps transformation. Explore NLP for customer retention.",
-        action: "Rebuilt fraud/credit models using Scikit-learn, XGBoost, SageMaker with time-based holdout validation. Integrated SHAP explainability into every model. Fine-tuned BERT sentiment models (91% accuracy) deployed as REST APIs with W&B tracking. Led MLOps build-out: FastAPI, Docker, Kubernetes, MLflow, CI/CD. Designed 200+ feature Feast feature store. Established drift monitoring with Evidently, WhyLabs, Great Expectations. Orchestrated 15TB+/month PySpark pipelines via Airflow into Snowflake.",
-        result: "6% accuracy lift at 80ms latency. SHAP satisfied regulatory audits. Sentiment models drove $1.2M+ revenue in 6 months. Release cycles: 3 weeks → 4 days at 99.7% availability. Feature store adopted by 3 teams, cutting new model dev by 35%. Drift monitoring eliminated 45% of production incidents."
+      hcl: {
+        situation: "HCL retail supply chain clients managing 1.1M+ transactions with inaccurate demand forecasting, excess inventory, and no rigorous experimentation framework. Seasonal stockouts and over-allocation were costing millions in lost revenue and trapped working capital.",
+        task: "Build accurate demand forecasting systems, real-time data pipelines, and a rigorous A/B and Bayesian experimentation framework to optimize inventory and marketing spend across 200+ SKUs.",
+        action: "Benchmarked Prophet, LSTM, TFT against XGBoost baselines. Built Kafka + Spark Streaming pipelines processing 800K+ daily transactions. Designed controlled A/B experiments with causal inference validation. Pioneered Bayesian experimentation framework with adaptive stopping rules. Deployed LightGBM LTV scoring. Delivered SHAP explainability dashboards.",
+        result: "14% improvement in 8-week forecast accuracy. 22% reduction in seasonal stockouts. $2.4M in working capital freed. $1.2M+ promotional budget reallocation. $1.8M in promotional spend optimization. Merchandising team model adoption: 40% → 85%."
       },
-      scca: {
-        situation: "Sports Car Club of America — 150+ annual events, 15,000+ members, operated on spreadsheets and gut instinct. Never had a data scientist. Pain points: staffing over-allocation, marketing with no rigorous measurement, retention plateaued at 78%, manual document processing consuming admin bandwidth.",
-        task: "As the sole data science resource, translate business questions into analytical approaches across four areas: event staffing forecasting, marketing campaign causal analysis, executive dashboards, and document automation. Prove that data science can deliver value in a non-technical organization.",
-        action: "Built time-series forecasting (Prophet, LightGBM) with walk-forward validation validated against 2 years of historical data. Applied causal inference (propensity score matching, diff-in-diff) to isolate true marketing campaign effects on 15K+ members. Built Power BI/Tableau dashboards tracking 150+ events with real-time KPI alerts. Built AWS Lambda + LLM orchestration pipeline for document entity extraction.",
-        result: "Staffing over-allocation down 40%, projected $70K annual savings. Isolated 12% retention lift from campaigns, redirected $80K budget. Retention improved 78% → 85%. Document processing: 4 days → 1 day. Member satisfaction up 22%."
-      },
-      niu: {
-        situation: "Biomedical research lab processing drug discovery literature — 100K+ PubMed articles needing automated knowledge extraction (drugs, proteins, diseases, gene interactions). Three concurrent teams, no standardized pipeline, no reproducible workflows, no consistent validation methodology. Faculty preparing $50K grant renewal.",
-        task: "Build NLP pipeline for automated text classification and named entity recognition. Create shared data infrastructure. Establish statistical evaluation framework. Build monitoring tools. Support grant renewal documentation.",
-        action: "Fine-tuned BERT/RoBERTa using LoRA (parameter-efficient tuning) on biomedical text. Designed scalable data ingestion framework serving 3 teams with full reproducibility. Built statistical evaluation framework using hypothesis testing, confidence intervals, and effect size analysis across 5+ experimental conditions. Created Streamlit dashboard for real-time monitoring.",
-        result: "89% F1-score on held-out test set. Reduced manual curation by 60%. Cut model validation cycles by 40%. Directly contributed to successful $50K grant renewal."
+      tcs: {
+        situation: "TCS banking clients with 450K+ customers and no systematic way to segment behavior, predict credit risk, or personalize digital banking experiences. Manual processes, intuition-based decisions, and missed cross-sell opportunities were leaving significant revenue on the table.",
+        task: "Build customer segmentation models, recommendation engines, and credit risk scoring systems using advanced analytics and ML to drive measurable conversion and retention improvements.",
+        action: "Segmented 450K+ customers using clustering, propensity modeling, and advanced SQL. Built hybrid recommendation engine with collaborative filtering and behavioral embeddings. Trained logistic regression and gradient boosted models for credit deterioration scoring. Established MLflow experiment tracking with Airflow retraining schedules.",
+        result: "12% lift in premium card upgrade conversions. 16% improvement in retention campaign response rates. 15% increase in cross-sell click-through rates. $500K in incremental quarterly revenue. 10% reduction in 60-day delinquency transitions."
       }
     }
   }
@@ -229,6 +179,7 @@ ${JSON.stringify(RESUME_DATA, null, 2)}
 
 STRICT RULES:
 - IMPORTANT: Sandeepteja has ALREADY GRADUATED. He completed his MS in Computer Science at Northern Illinois University in December 2025. Never say he is "currently pursuing" or "enrolled in" his Master's — always say he "completed" or "graduated" (Dec 2025).
+- IMPORTANT: Sandeepteja is currently working at Thomson Reuters as a Data Scientist II (Aug 2025 – Present). Always reference this as his current role.
 - ONLY answer questions directly related to Sandeepteja: his skills, experience, projects, education, achievements, career story, motivations, goals, and contact information.
 - If asked anything unrelated to Sandeepteja or his background (general knowledge, coding help, other people, opinions, etc.), respond: "I can only answer questions about Sandeepteja. Feel free to ask about his career journey, skills, projects, or experience!"
 - Never hallucinate skills, experiences, or facts not present in the data above.
@@ -239,8 +190,8 @@ WHAT YOU CAN ANSWER (beyond just the resume bullet points):
 - "Walk me through his career journey" → Use narrative.careerJourney
 - "What's his career goal?" → Use narrative.careerGoal
 - "What's he like to work with?" / "What's his work style?" → Use narrative.workStyle
-- "Tell me about his time at [company]" → Use narrative.companyStories for the relevant company
-- "Why did he leave Capgemini?" / "Why did he go to ADF?" → Use the career journey narrative
+- "Tell me about his time at [company]" → Use narrative.companyStories for the relevant company (thomsonReuters, hcl, tcs)
+- "Why did he go back to school?" → Use narrative.whyMasters
 - Any personal "why" or "story" questions → Draw from the narrative section
 
 RESPONSE STYLE:
@@ -251,6 +202,6 @@ RESPONSE STYLE:
 - Use **bold** (with double asterisks like **this**) for company names, key metrics, and role titles so they stand out.
 - Use bullet points (starting with "- ") for lists of skills, projects, or achievements.
 - Never write long paragraphs. Break into short bullets or sentences.
-- Highlight quantifiable impact where relevant (e.g., **6% accuracy lift**, **$1.2M+ revenue impact**).
+- Highlight quantifiable impact where relevant (e.g., **14% forecast accuracy improvement**, **$5M+ business impact**).
 - For contact info requests, share his email (${RESUME_DATA.personal.email}) or LinkedIn (${RESUME_DATA.personal.linkedin}).
 `;

@@ -258,12 +258,12 @@ const App: React.FC = () => {
                  <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Years Experience</div>
                </div>
                <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-blue-500/30 transition-colors">
-                 <div className="text-4xl font-bold text-blue-400 mb-2">$1.2M+</div>
-                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Revenue Impact</div>
+                 <div className="text-4xl font-bold text-blue-400 mb-2">$5M+</div>
+                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Business Impact</div>
                </div>
                <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-purple-500/30 transition-colors">
-                 <div className="text-4xl font-bold text-purple-400 mb-2">6%</div>
-                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Accuracy Boost</div>
+                 <div className="text-4xl font-bold text-purple-400 mb-2">35K+</div>
+                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Docs/Day Processed</div>
                </div>
             </div>
           </div>

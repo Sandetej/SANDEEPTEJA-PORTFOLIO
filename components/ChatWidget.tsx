@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Send, Loader2, FileText, Sparkles, ChevronDown } from 'lucide-react';
+import { X, Send, Loader2, Brain, Sparkles, ChevronDown } from 'lucide-react';
 import { sendMessageToGemini } from '../services/geminiService';
 import { Message } from '../types';
 import { GenerateContentResponse } from "@google/genai";
@@ -153,7 +153,7 @@ const ChatWidget: React.FC = () => {
           <div className="flex items-center gap-3">
             <div className="relative">
               <div className="p-2 bg-primary-500/20 rounded-xl border border-primary-500/30">
-                <FileText size={18} className="text-primary-400" />
+                <Brain size={18} className="text-primary-400" />
               </div>
               <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-slate-800" />
             </div>
@@ -185,7 +185,7 @@ const ChatWidget: React.FC = () => {
             >
               {msg.role === 'model' && (
                 <div className="w-7 h-7 rounded-lg bg-primary-500/20 border border-primary-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <FileText size={13} className="text-primary-400" />
+                  <Brain size={13} className="text-primary-400" />
                 </div>
               )}
               <div
@@ -210,7 +210,7 @@ const ChatWidget: React.FC = () => {
           {isTyping && messages[messages.length - 1]?.role === 'user' && (
             <div className="flex gap-2 justify-start">
               <div className="w-7 h-7 rounded-lg bg-primary-500/20 border border-primary-500/30 flex items-center justify-center flex-shrink-0">
-                <FileText size={13} className="text-primary-400" />
+                <Brain size={13} className="text-primary-400" />
               </div>
               <div className="bg-slate-800 px-3.5 py-2.5 rounded-2xl rounded-tl-sm border border-slate-700/60 flex items-center gap-1">
                 <Loader2 size={14} className="animate-spin text-primary-400" />
@@ -285,7 +285,7 @@ const ChatWidget: React.FC = () => {
           <X size={22} />
         ) : (
           <>
-            <FileText size={22} />
+            <Brain size={22} />
             <span className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-slate-950 animate-pulse" />
           </>
         )}
