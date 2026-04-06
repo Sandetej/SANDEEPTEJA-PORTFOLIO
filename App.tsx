@@ -128,8 +128,8 @@ const App: React.FC = () => {
           </div>
 
           <p className="text-lg text-slate-400 max-w-xl leading-relaxed border-l-2 border-slate-700 pl-6">
-            Transforming complex data into <span className="text-slate-200 font-semibold">revenue-impacting</span> decisions. 
-            Specialized in <span className="text-primary-400">GenAI</span>, <span className="text-primary-400">MLOps</span>, and scalable data products.
+            Turning structured experiments into <span className="text-slate-200 font-semibold">revenue-impacting</span> decisions.
+            Specialized in <span className="text-primary-400">A/B/n Testing</span>, <span className="text-primary-400">Causal Inference</span>, and <span className="text-primary-400">Design of Experiments</span>.
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
@@ -258,12 +258,12 @@ const App: React.FC = () => {
                  <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Years Experience</div>
                </div>
                <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-blue-500/30 transition-colors">
-                 <div className="text-4xl font-bold text-blue-400 mb-2">$5M+</div>
-                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Business Impact</div>
+                 <div className="text-4xl font-bold text-blue-400 mb-2">$1.2M+</div>
+                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Revenue Impact</div>
                </div>
                <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-purple-500/30 transition-colors">
-                 <div className="text-4xl font-bold text-purple-400 mb-2">35K+</div>
-                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Docs/Day Processed</div>
+                 <div className="text-4xl font-bold text-purple-400 mb-2">12+</div>
+                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">A/B Tests Led</div>
                </div>
             </div>
           </div>
