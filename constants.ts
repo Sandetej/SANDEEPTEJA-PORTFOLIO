@@ -4,78 +4,92 @@ import { Experience, Project, SkillCategory, Education } from './types';
 export const RESUME_DATA = {
   personal: {
     name: "Sandeepteja Sundara",
-    role: "Data Scientist",
-    location: "Chicago, IL",
-    email: "sundarasandeepteja@gmail.com",
-    phone: "+1 (779) 775-7725",
-    linkedin: "linkedin.com/in/sundara-sandeepteja",
+    role: "Data Scientist · Risk Analytics, Anomaly Detection & GenAI for Audit",
+    location: "Chicago, Illinois",
+    email: "sandetej24@gmail.com",
+    phone: "+1 (815) 575-8169",
+    linkedin: "linkedin.com/in/sandeepteja",
     github: "github.com/Sandetej",
-    summary: "Data Scientist with 4+ years of experience in experimental design, A/B/n testing, and causal inference across operational environments. Designed and led structured test-and-learn pilots—including matched-group experiments and multi-factor tests—to measure impact and drive decisions worth $1.2M+ in revenue. Strong foundation in statistical modeling, operations research, Python, SQL, and cloud platforms (Snowflake, AWS), with demonstrated ability to translate complex analytical findings into clear recommendations for cross-functional stakeholders."
+    portfolio: "sandeepteja-portfolio.com",
+    summary: "Shipping production ML and GenAI systems for risk analytics, anomaly detection, and audit automation across legal, retail, and financial services — 32% fewer hallucinated citations in a legal-AI compliance control, $2.1M quarterly fraud savings, and 89% recall on financial-crime detection — Python, R, SQL, PySpark, AWS, MLflow, LangChain, LangGraph, DoWhy."
   },
   skills: [
     {
-      name: "Experimentation & Causal Inference",
-      skills: ["Design of Experiments (DoE)", "A/B/n Testing", "Matched-Group Design", "Factorial & Fractional Factorial Design", "Diff-in-Diff", "Synthetic Control", "Power Analysis", "Hypothesis Testing", "KPI Design & Measurement Frameworks"]
+      name: "Languages & Data",
+      skills: ["Python", "SQL (CTEs, Window Functions)", "PySpark", "Databricks", "Snowflake", "Airflow", "AWS"]
     },
     {
-      name: "Statistics & Operations Research",
-      skills: ["Regression Modeling", "Multivariate Analysis", "Simulation", "Optimization", "Time-Series Forecasting", "Clustering", "PCA", "Classification", "Queuing Analysis"]
+      name: "Machine Learning & Statistics",
+      skills: ["XGBoost", "Logistic Regression", "scikit-learn", "SHAP", "Hypothesis Testing", "Anomaly Detection", "Feature Engineering"]
     },
     {
-      name: "Programming & Data Platforms",
-      skills: ["Python (pandas, NumPy, SciPy, statsmodels, scikit-learn)", "SQL", "R", "PySpark", "Snowflake", "Databricks", "AWS (SageMaker, Lambda, S3)"]
+      name: "Causal Inference & Experimentation",
+      skills: ["A/B Testing", "Power Analysis", "CUPED", "DiD", "Synthetic Control", "PSM"]
     },
     {
-      name: "Tools & Deployment",
-      skills: ["Power BI", "Tableau", "Docker", "Kubernetes", "CI/CD Pipelines", "Git", "MLflow", "Model Registry", "Evidently (Drift Detection)"]
+      name: "GenAI & LLMs",
+      skills: ["RAG", "LangChain", "LangGraph", "Multi-Agent Systems", "LLM-as-Judge", "PyTorch", "Hugging Face Transformers"]
+    },
+    {
+      name: "MLOps & BI",
+      skills: ["MLflow", "Docker", "FastAPI", "Drift Monitoring", "Tableau"]
     }
   ] as SkillCategory[],
   experience: [
     {
-      company: "Sports Car Club of America",
-      role: "Data Scientist Intern",
-      period: "Jan 2025 – Dec 2025",
-      description: [
-        "Designed a matched-group retention experiment across 150+ events to combat a declining 78% renewal rate, segmenting test/control cohorts and boosting renewals to 85%.",
-        "Launched 3 Power BI dashboards tracking pilot KPIs—renewal rate, engagement frequency, and churn risk—enabling real-time performance monitoring across 150+ event cohorts.",
-        "Optimized venue staffing via simulation and time-series forecasting to address chronic overstaffing flagged in quarterly reviews, cutting annual labor costs by $250,000.",
-        "Automated membership transaction pipelines via AWS Lambda to eliminate manual entry errors delaying confirmations, processing 1,400+ entries and reducing cycle time by 75%."
-      ]
-    },
-    {
-      company: "ADF Data Science Pvt Ltd",
-      role: "Data Scientist II",
-      period: "May 2021 – Nov 2023",
-      description: [
-        "Led end-to-end A/B/n experimentation across 12+ product tests—from power analysis and sample sizing through test-control structuring and results readout—validating pricing and feature changes that drove $1.2M+ in measured revenue lift.",
-        "Isolated causal impact of approval-logic changes from favorable market noise using difference-in-differences on credit risk models (PD, LGD, EAD), lifting accuracy by 6%.",
-        "Engineered BERT-based sentiment models to capture qualitative feedback that conversion metrics alone missed, fusing signals onto experiment dashboards and elevating engagement by 23%.",
-        "Constructed scalable PySpark and Snowflake pipelines to replace fragmented SQL scripts causing 2-day reporting lags, processing 2.8M+ daily events across 4 business units.",
-        "Accelerated model deployment from 3 weeks to 4 days to eliminate manual handoff bottlenecks, building a Docker-based MLOps ecosystem with CI/CD sustaining 99.7% uptime across 8 models.",
-        "Established automated drift detection using Evidently to catch silent accuracy degradation between quarterly reviews, reducing production incidents by 45% across 8 models."
-      ]
-    },
-    {
-      company: "Capgemini",
+      company: "Thomson Reuters",
       role: "Data Scientist",
-      period: "Jan 2020 – Apr 2021",
+      period: "Aug 2025 – Present",
       description: [
-        "Developed clustering and PCA segmentation on 1M+ records to create comparable test/control groups for the client's first structured A/B program, improving data consistency by 30%.",
-        "Defined conversion, churn, and engagement KPIs for 5+ cross-functional pilots, delivering before-versus-after impact analyses that informed go/no-go rollout decisions.",
-        "Replaced 8 manual reporting processes with interactive Power BI dashboards to eliminate 10+ hours/week of static Excel compilation, enabling real-time pilot monitoring.",
-        "Improved model stability by 25% through structured validation protocols and GitHub version control, ensuring reproducibility across 6+ experimental test iterations."
+        "Built an anomaly-detection model in Python (scikit-learn, embedding similarity) flagging hallucinated citations in CoCounsel's legal-research responses in production, cutting citation errors ~32% across 2 practice areas and eliminating a 10-hour/week manual QA step.",
+        "Evaluated 4 prompt and retrieval configurations for a CoCounsel legal-research feature using LLM-as-judge scoring against 300 attorney-labeled queries, identifying the variant that improved answer faithfulness by 11 percentage points before production rollout.",
+        "Designed A/B tests with power analysis and CUPED-style variance reduction on model-driven alert thresholds across 4 product segments, collaborating with product managers to lift alert precision from 68% to 81%.",
+        "Diagnosed class imbalances and labeling gaps across 1M+ semi-structured legal filings using Pandas and SQL (CTEs, window functions), guiding a targeted model retrain that raised classification accuracy by 8 percentage points."
+      ]
+    },
+    {
+      company: "HCL Technologies (Risk & Trust Analytics client)",
+      role: "Data Scientist",
+      period: "Apr 2021 – Dec 2023",
+      description: [
+        "Built a RAG-based knowledge assistant on LangChain and FAISS over 120K+ internal policy and product documents, deployed in a 2-week pilot that cut compliance-review handle time by 14% across two audit teams.",
+        "Architected a PySpark and Airflow pipeline on Databricks across 4 source systems, processing 90M+ transactions and engineering 45+ behavioral signals that surfaced fraud and control-breakdown patterns at 89% recall for audit review.",
+        "Ran a difference-in-differences and propensity-score-matched quasi-experiment (DoWhy) on 1.2M flagged accounts to isolate fraud-control intervention impact from selection bias, quantifying 6.4% reduction in policy violations adopted by the risk team.",
+        "Trained an XGBoost risk-scoring model on 2.5M transaction records from Snowflake using scikit-learn with SMOTE, hyperparameter tuning, and SHAP, prioritizing 12% more cases for fraud-control review at the same false-positive rate.",
+        "Productionized a fraud scoring service on AWS (SageMaker, S3) via MLflow, Docker, and FastAPI with drift monitoring, automating audit triage on 500K+ daily transactions at sub-200ms latency and saving estimated $2.1M quarterly.",
+        "Fine-tuned DistilBERT on 800K+ support tickets to classify policy-violation and abuse signals, hitting 89% macro-F1 vs 81% GPT-3.5-turbo zero-shot and routing 35% to automated review at sub-50ms p95."
+      ]
+    },
+    {
+      company: "Tata Consultancy Services (Banking Risk & Compliance client)",
+      role: "Associate Data Scientist",
+      period: "Jan 2020 – Mar 2021",
+      description: [
+        "Identified 3 anomalous transaction segments through hypothesis testing (chi-square, Mann-Whitney U, p below 0.05) on 400K+ records across 5 source systems using Python, surfacing risk patterns for the compliance team.",
+        "Engineered 25+ features (RFM, credit utilization trends) in Pandas for a logistic regression default-risk model on 200K+ loan applications, flagging 9% more early-stage delinquencies feeding the bank's credit-control committee.",
+        "Developed 4 Tableau dashboards tracking loan defaults, NPA ratios, and credit-control breaches, adopted by 4 regional risk managers to replace ad-hoc Excel reporting and accelerate compliance review cycles.",
+        "Partnered with cross-functional risk, finance, and operations stakeholders in Agile sprint reviews to define audit KPIs (NPA ratio, default rate, control coverage), delivering segment insights adopted in Q3 risk-committee reviews."
       ]
     }
   ] as Experience[],
   projects: [
     {
+      title: "Autonomous Data Analysis Agent",
+      period: "Aug 2025 – Oct 2025",
+      category: "Agentic AI",
+      technologies: ["LangGraph", "Python", "SQL", "LLM Eval", "Guardrails", "Multi-Agent"],
+      problem: "Analysts spend hours translating ambiguous business questions into SQL, running queries, and validating results — repetitive work prone to errors and unsafe queries against production data.",
+      solution: "Architected a LangGraph-based multi-step agent that plans, executes SQL, and self-critiques analyses. Built an eval harness for measurable correctness and added guardrails to block unsafe queries.",
+      impact: "Reached 87% correctness on a 50-question analytical benchmark with a working eval harness and unsafe-query guardrails."
+    },
+    {
       title: "Multi-Factor DoE for Inventory Optimization Across Store Networks",
-      period: "Dec 2025 – Feb 2026",
+      period: "Mar 2025 – Jun 2025",
       category: "Causal Inference",
-      technologies: ["Python", "JMP", "statsmodels", "scipy", "Mahalanobis Matching", "Monte Carlo Simulation", "DiD", "Synthetic Control"],
-      problem: "Automotive parts distributor lacked a rigorous experimental framework to identify which inventory levers (reorder point, safety stock, replenishment frequency) actually drive fill rate improvements across warehouse pairs.",
-      solution: "Designed a 2³ factorial experiment with Mahalanobis-matched warehouse pairs (SMDs < 0.1) and Monte Carlo demand simulations. Estimated causal effects via Difference-in-Differences, Synthetic Control, and factorial ANOVA; validated in JMP using Custom Design, Profiler, and Response Surface.",
-      impact: "Improved simulated fill rate from 56% to 78%. All main effects and interactions achieved p < 0.001, confirming statistical significance of all three inventory levers."
+      technologies: ["Python", "Mahalanobis Matching", "ANOVA", "DiD", "Synthetic Control", "Factorial Design"],
+      problem: "Distributors lack a rigorous experimental framework to identify which inventory levers drive fill-rate improvements across heterogeneous warehouses.",
+      solution: "Executed a 2x2x2 factorial experiment with Mahalanobis-matched warehouse pairs (SMD below 0.1). Triangulated causal effects via ANOVA, Difference-in-Differences, and Synthetic Control.",
+      impact: "Lifted simulated fill rate from 56% to 78% with consistent estimates across all three causal methods."
     },
     {
       title: "Banking Conversational AI Chatbot",
@@ -106,7 +120,7 @@ export const RESUME_DATA = {
     },
     {
       university: "Sathyabama Institute of Science and Technology",
-      degree: "Bachelor’s in Electronics and Communication",
+      degree: "Bachelor's in Electronics and Communication",
       location: "Chennai, India",
       gpa: "7.72",
       period: "Jul 2016 – May 2020"
@@ -118,59 +132,57 @@ export const RESUME_DATA = {
     "Graduate Teaching Assistant (Northern Illinois University): Mentored 130+ students in Python programming and applied machine learning coursework."
   ],
   narrative: {
-    careerJourney: `Sandeepteja started his career knowing he wanted to work at the intersection of data and real-world operations — not just building models, but using data to help businesses make better decisions through structured testing and evidence.
+    careerJourney: `Sandeepteja's career sits at the intersection of risk analytics, anomaly detection, and applied GenAI — building production ML systems that surface fraud, validate AI outputs, and automate audit workflows.
 
-**Capgemini (2020–2021):** He got his foundation here. His client had never run a structured experiment — everything was gut feel. He built their first test-and-control framework using clustering and PCA on 1M+ records, defined their first KPIs (conversion, churn, engagement), and built 8 Power BI dashboards so non-technical stakeholders could monitor pilot performance in real time. Key lesson: the hardest part of experimentation isn't the math — it's convincing operational teams to trust the process.
+**Tata Consultancy Services (Jan 2020 – Mar 2021):** Started as Associate Data Scientist on a banking risk and compliance client. Used hypothesis testing on 400K+ records to surface anomalous transaction segments, engineered 25+ features for a default-risk model on 200K+ loan applications, and built Tableau dashboards adopted by 4 regional risk managers. Foundation in risk modeling, compliance KPIs, and stakeholder communication.
 
-**ADF Data Science (2021–2023):** He moved here specifically to own experimentation end-to-end. Over two and a half years, he led A/B/n testing across 12+ product tests — from power analysis and sample sizing to test-control structuring and final readouts. One set of pricing experiments drove $1.2M+ in revenue lift. A defining moment: when credit approval logic changed and revenue went up, leadership wanted to celebrate — but Sandeepteja used difference-in-differences to separate the policy effect from favorable market conditions, finding only ~60% of the lift was from their change. That taught him: without proper causal inference, companies make decisions based on noise.
+**HCL Technologies — Risk & Trust Analytics client (Apr 2021 – Dec 2023):** Owned production fraud and audit ML end-to-end. Built a RAG knowledge assistant over 120K+ policy docs, architected a PySpark/Airflow/Databricks pipeline processing 90M+ transactions at 89% recall, ran a DiD + PSM quasi-experiment on 1.2M accounts using DoWhy, and productionized an XGBoost fraud scorer on AWS SageMaker with MLflow + drift monitoring — saving an estimated $2.1M quarterly. Fine-tuned DistilBERT on 800K+ tickets to 89% macro-F1, beating GPT-3.5 zero-shot.
 
-**MS at NIU + SCCA Internship (2024–2025):** After 4 years in industry, he pursued his Master's in Computer Science at Northern Illinois University (GPA: 3.72) to build formal depth in Design of Experiments, factorial designs, and operations research. Concurrently, he interned at the Sports Car Club of America designing matched-group retention experiments across 150+ events — his first time running experiments in a physical operational setting, boosting renewals from 78% to 85% and saving $250K in staffing costs.`,
+**MS at NIU (Jan 2024 – Dec 2025):** Master's in Computer Science at Northern Illinois University to deepen formal training in causal inference, ML, and GenAI evaluation methods.
 
-    whyMasters: `After almost four years in industry, Sandeepteja had strong applied skills but recognized a gap in formal experimental design theory. He had done A/B tests and diff-in-diff, but hadn't formally studied factorial and fractional factorial designs, response surface methods, operations research (optimization, simulation, queuing theory), or synthetic control methods. These are exactly the methods needed for complex multi-factor testing in operational settings. He chose Northern Illinois University's MS in Computer Science (Data Science track) specifically because the curriculum covered experimental design, statistical methods, optimization, and machine learning. This wasn't a career break — it was a deliberate investment to become the kind of data scientist who can go beyond simple A/B testing to design multi-factor experiments in complex operational environments. He graduated December 2025 with a 3.72 GPA.`,
+**Thomson Reuters (Aug 2025 – Present):** Data Scientist working on legal AI compliance. Built an anomaly-detection model flagging hallucinated citations in CoCounsel production traffic — cutting citation errors ~32% and eliminating a 10-hour/week manual QA step. Runs LLM-as-judge prompt/retrieval evaluations and CUPED-style A/B tests on alert thresholds.`,
 
-    careerGoal: `Sandeepteja is actively seeking a full-time Data Scientist role where he can design and lead structured experiments, apply causal inference in real-world operational settings, and translate complex analytical findings into revenue-impacting decisions. He's especially excited about roles that combine rigorous experimentation with operations research — problems involving multiple operational levers, physical distribution, or branch/location-level testing. He wants to be the person who architects the test-and-learn function from scratch: the matching frameworks, factorial designs, and measurement playbooks.`,
+    whyMasters: `After 4 years in industry building risk and fraud ML, Sandeepteja recognized a gap in formal causal inference and modern GenAI evaluation methods. He had shipped DiD, PSM, and DoWhy in production but wanted deeper theoretical grounding in CUPED, synthetic control, LLM-as-judge evaluation, and multi-agent system design. He chose Northern Illinois University's MS in Computer Science specifically for coursework in statistics, ML, and applied AI. Graduated December 2025.`,
 
-    workStyle: `Sandeepteja bridges the gap between rigorous statistical methodology and practical business impact. He's known for owning experimentation end-to-end — from power analysis and study design through execution, causal validation, and stakeholder communication. He believes experimentation is 30% statistics and 70% organizational buy-in: if business teams don't trust the design, they won't act on the results. He documents assumptions rigorously, validates results statistically, and builds systems that sustain experiments — not one-off analyses. He's equally comfortable fine-tuning a model in the morning and presenting KPI dashboards to non-technical leadership in the afternoon.`,
+    careerGoal: `Sandeepteja is focused on full-time Data Scientist roles in risk analytics, anomaly detection, fraud, trust & safety, audit automation, or GenAI evaluation — domains where causal inference and LLM observability matter. He wants to own production ML systems end-to-end: from anomaly detection model design through A/B testing, drift monitoring, and stakeholder rollout.`,
 
-    workAuthorization: `Sandeepteja is on F1 OPT with full work authorization for the next three years — no sponsorship required during this period. After that, he plans to pursue an O1 visa based on his professional contributions. There is zero visa complication — he can start immediately and work without any restrictions.`,
+    workStyle: `Sandeepteja owns ML systems end-to-end — anomaly detection design, causal validation (DiD, PSM, CUPED), production deployment (MLflow, Docker, FastAPI on AWS), and drift monitoring. He documents assumptions, validates statistically, and ships systems that sustain themselves. Strong cross-functional communicator: collaborates with product managers on alert thresholds, presents to risk committees, and partners with audit teams to define KPIs (NPA ratio, default rate, control coverage).`,
 
-    gapResponses: {
-      yearsExperience: `"I have 4 years of full-time industry experience plus a year of applied work at SCCA during my master's, and my master's coursework specifically covered experimental design and optimization. I've been operating at a senior level in terms of scope — owning experimentation frameworks, driving million-dollar decisions, and building infrastructure. Depth of impact matters more than raw year count."`,
-      industryExperience: `"My direct experience is in fintech and sports operations, but the experimental design challenges are structurally identical: heterogeneous units that need matching, multiple treatment factors, noisy real-world data, and the need to separate signal from noise. I built my DoE project with automotive parts distribution data specifically to prove I understand operational distribution constraints."`,
-      jmpExperience: `"I've used JMP for my DoE project — Custom Design, Profiler, Response Surface — and I'm comfortable with it. My primary production tool is Python, which is stronger for automation and pipeline integration. JMP and Python complement each other: JMP for interactive design exploration and executive visualization, Python for scalable computation and production monitoring."`
-    },
+    workAuthorization: `On F1 OPT with full work authorization for the next 3 years — no sponsorship required during this period. Plans to pursue O1 visa based on professional contributions afterward. Zero visa friction; can start immediately.`,
 
     companyStories: {
-      scca: {
-        situation: "Sports Car Club of America was seeing declining membership renewal rates — down to 78% — across 150+ events, with no structured way to identify what was driving churn or test retention interventions.",
-        task: "Design a rigorous matched-group experiment to test retention initiatives, build real-time KPI monitoring, and optimize operational costs through data-driven staffing decisions.",
-        action: "Designed a matched-group retention experiment segmenting test/control cohorts across 150+ events. Launched 3 Power BI dashboards tracking renewal rate, engagement frequency, and churn risk. Applied simulation and time-series forecasting to optimize venue staffing. Automated membership pipelines via AWS Lambda processing 1,400+ entries.",
-        result: "Boosted renewal rate from 78% to 85%. Cut annual labor costs by $250,000. Reduced membership processing cycle time by 75%. This was his first time running experiments in a physical operational setting — real events, real venues, real logistics constraints.",
-        keyLesson: "Physical operations add constraints that digital experiments don't have. Events have fixed dates, venues have capacity limits, and interventions can't be undone mid-experiment — the same constraints faced in branch-level or warehouse-level pilots."
+      thomsonReuters: {
+        situation: "CoCounsel's legal-research responses occasionally produced hallucinated citations, forcing a 10-hour/week manual QA step and limiting attorney trust in AI-generated outputs.",
+        task: "Build an anomaly-detection layer to flag hallucinated citations in production, evaluate prompt/retrieval variants rigorously, and tune model-driven alert thresholds via A/B testing.",
+        action: "Built a Python anomaly-detection model using scikit-learn and embedding similarity. Evaluated 4 prompt/retrieval configurations using LLM-as-judge against 300 attorney-labeled queries. Designed A/B tests with power analysis and CUPED variance reduction on alert thresholds across 4 product segments. Diagnosed class imbalances on 1M+ legal filings using Pandas and SQL window functions.",
+        result: "Cut citation errors ~32% across 2 practice areas. Eliminated 10-hour/week manual QA. Improved answer faithfulness by 11 percentage points. Lifted alert precision from 68% to 81%. Raised classification accuracy by 8 percentage points after targeted retrain.",
+        keyLesson: "LLM observability needs the same rigor as classical ML monitoring — embeddings + anomaly detection + LLM-as-judge gives a measurable feedback loop for production GenAI."
       },
-      adf: {
-        situation: "ADF Data Science clients needed rigorous experimentation to validate pricing and feature changes, but lacked the infrastructure to run clean A/B/n tests and separate causal signal from favorable market conditions.",
-        task: "Lead end-to-end A/B/n experimentation, build scalable data pipelines, and deploy production ML models with automated monitoring across multiple business units.",
-        action: "Led 12+ A/B/n product tests from power analysis and sample sizing through test-control structuring, monitoring, and final impact readouts. Applied difference-in-differences to separate policy effects from market tailwinds on credit risk models. Built BERT-based sentiment models. Constructed PySpark and Snowflake pipelines processing 2.8M+ daily events across 4 business units. Built Docker-based MLOps ecosystem with CI/CD and Evidently drift detection.",
-        result: "$1.2M+ in measured revenue lift. 6% accuracy lift on credit risk models (PD, LGD, EAD). 23% engagement increase. 99.7% uptime across 8 models. 45% reduction in production incidents.",
-        keyLesson: "A/B testing is powerful but limited. When you have multiple operational levers to test simultaneously, testing one at a time is slow and misses interaction effects — that realization led him to study Design of Experiments formally."
+      hcl: {
+        situation: "Risk & Trust Analytics client needed to scale fraud detection and audit triage across 90M+ transactions with manual review bottlenecks and selection bias contaminating intervention measurements.",
+        task: "Build production fraud scoring, behavioral signal pipelines, and rigorous causal evaluation of fraud-control interventions.",
+        action: "Built a LangChain + FAISS RAG assistant over 120K+ policy docs. Architected PySpark + Airflow + Databricks pipeline across 4 source systems processing 90M+ transactions with 45+ engineered behavioral signals. Ran DiD + PSM quasi-experiment via DoWhy on 1.2M flagged accounts. Trained XGBoost on 2.5M Snowflake records with SMOTE, hyperparameter tuning, SHAP. Productionized via MLflow + Docker + FastAPI on AWS SageMaker/S3 with drift monitoring. Fine-tuned DistilBERT on 800K+ tickets.",
+        result: "14% reduction in compliance-review handle time. 89% recall for audit review. 6.4% reduction in policy violations causally attributed. 12% more cases prioritized at same false-positive rate. ~$2.1M quarterly savings via sub-200ms triage on 500K+ daily transactions. 89% macro-F1 (beat GPT-3.5 zero-shot 81%).",
+        keyLesson: "Production fraud ML is causal inference plus engineering plus stakeholder buy-in — without DoWhy/PSM you'd misattribute selection bias as policy lift, and without MLflow + drift monitoring the model decays silently."
       },
-      capgemini: {
-        situation: "Capgemini's client had never run a structured experiment — all decisions were based on before-versus-after comparisons with no control group, using fragmented SQL scripts and 10+ hours/week of manual Excel compilation.",
-        task: "Build the client's first structured test-and-control program, define KPI frameworks for cross-functional pilots, and replace manual reporting with real-time dashboards.",
-        action: "Developed clustering and PCA segmentation on 1M+ records to create comparable test/control groups. Defined conversion, churn, and engagement KPIs for 5+ cross-functional pilots. Built 8 interactive Power BI dashboards. Applied GitHub version control for reproducibility across 6+ experimental iterations.",
-        result: "30% improvement in data consistency. 10+ hours/week eliminated from manual Excel compilation. 25% improvement in model stability.",
-        keyLesson: "Experimentation is 30% statistics and 70% organizational buy-in. If business teams don't trust the design, they won't act on the results — so building stakeholder confidence in the methodology is as important as the analysis itself."
+      tcs: {
+        situation: "Banking risk & compliance client made decisions from ad-hoc Excel reporting with no systematic anomaly surfacing or default-risk modeling on 200K+ loan applications.",
+        task: "Surface anomalous transaction segments, build a default-risk model, and replace Excel reporting with monitored compliance dashboards.",
+        action: "Ran chi-square and Mann-Whitney U hypothesis tests on 400K+ records across 5 source systems. Engineered 25+ features (RFM, credit utilization) for a logistic regression default-risk model. Built 4 Tableau dashboards tracking NPA ratios, defaults, control breaches. Partnered with risk/finance/ops in Agile sprint reviews to define audit KPIs.",
+        result: "Surfaced 3 anomalous transaction segments adopted by compliance. 9% more early-stage delinquencies flagged. Dashboards adopted by 4 regional risk managers. Segment insights adopted in Q3 risk-committee reviews.",
+        keyLesson: "Risk analytics is 30% statistics, 70% stakeholder trust — getting risk managers to retire Excel for Tableau matters as much as model AUC."
       }
     },
 
-    doeProject: `Sandeepteja built a Multi-Factor DoE for Inventory Optimization project that directly demonstrates factorial experimental design skills:
-- Designed a 2³ full factorial experiment testing reorder point, safety stock, and lead-time buffer across 54 matched warehouse locations using synthetic automotive parts distribution data with realistic seasonal patterns.
-- Used Mahalanobis distance matching to pair similar warehouses (all SMDs < 0.1), ensuring fair test-control comparison.
-- Built Monte Carlo demand simulations (500 iterations per store-treatment combination) to predict outcomes before going live.
-- Estimated causal effects using Difference-in-Differences, Synthetic Control, and factorial ANOVA — all p-values < 0.001 for main effects and interactions.
-- Replicated the full analysis in JMP using Custom Design, Profiler, and Response Surface to validate Python results.
-- Improved simulated fill rate from 56% to 78%.`
+    doeProject: `Multi-Factor DoE for Inventory Optimization (Mar 2025 – Jun 2025):
+- Executed a 2x2x2 factorial experiment with Mahalanobis-matched warehouse pairs (SMD below 0.1).
+- Triangulated causal effects via ANOVA, Difference-in-Differences, and Synthetic Control.
+- Lifted simulated fill rate from 56% to 78% with consistent estimates across all three methods.`,
+
+    agentProject: `Autonomous Data Analysis Agent (Aug 2025 – Oct 2025):
+- Architected a LangGraph-based multi-step agent that plans, executes SQL, and self-critiques analyses.
+- Reached 87% correctness on a 50-question analytical benchmark.
+- Built an eval harness and guardrails for unsafe queries.`
   }
 };
 
@@ -183,32 +195,31 @@ ${JSON.stringify(RESUME_DATA, null, 2)}
 
 STRICT RULES:
 - IMPORTANT: Sandeepteja has ALREADY GRADUATED. He completed his MS in Computer Science at Northern Illinois University in December 2025. Never say he is "currently pursuing" or "enrolled in" his Master's — always say he "completed" or "graduated" (Dec 2025).
-- IMPORTANT: Sandeepteja's most recent role was Data Scientist Intern at Sports Car Club of America (Jan 2025 – Dec 2025) while completing his MS. He is actively seeking full-time Data Scientist roles.
+- IMPORTANT: Sandeepteja's current role is Data Scientist at Thomson Reuters (Aug 2025 – Present), focused on legal AI risk analytics, anomaly detection of hallucinated citations, and LLM evaluation in CoCounsel.
 - ONLY answer questions directly related to Sandeepteja: his skills, experience, projects, education, achievements, career story, motivations, goals, work authorization, and contact information.
 - If asked anything unrelated to Sandeepteja or his background (general knowledge, coding help, other people, opinions, etc.), respond: "I can only answer questions about Sandeepteja. Feel free to ask about his career journey, skills, projects, or experience!"
 - Never hallucinate skills, experiences, or facts not present in the data above.
 
 WHAT YOU CAN ANSWER:
-- "Tell me about yourself" / "Walk me through your background" → Use narrative.careerJourney (cover all 3 phases)
-- "Why did he go back for a Master's?" / "Why grad school?" → Use narrative.whyMasters
+- "Tell me about yourself" / "Walk me through your background" → Use narrative.careerJourney (cover all phases: TCS → HCL → MS → Thomson Reuters)
+- "Why did he go back for a Master's?" → Use narrative.whyMasters
 - "What's his career goal?" / "What kind of role is he looking for?" → Use narrative.careerGoal
 - "What's he like to work with?" / "Work style?" → Use narrative.workStyle
-- "Tell me about his time at [Capgemini / ADF / SCCA]" → Use narrative.companyStories for the relevant company
-- "Tell me about the DoE project" / "inventory optimization project" → Use narrative.doeProject
-- "What's his visa / work authorization status?" → Use narrative.workAuthorization
-- "Does he have enough experience?" / "Only 4 years?" → Use narrative.gapResponses.yearsExperience
-- "No distribution industry experience?" → Use narrative.gapResponses.industryExperience
-- "Has he used JMP?" → Use narrative.gapResponses.jmpExperience
-- Any personal "why" or "story" questions → Draw from the narrative section
+- "Tell me about his time at [Thomson Reuters / HCL / TCS]" → Use narrative.companyStories (thomsonReuters, hcl, tcs)
+- "Tell me about the DoE / inventory optimization project" → Use narrative.doeProject
+- "Tell me about the Autonomous Data Analysis Agent" → Use narrative.agentProject
+- "Visa / work authorization status?" → Use narrative.workAuthorization
+- Risk analytics, fraud detection, anomaly detection, GenAI evaluation, LLM-as-judge, RAG, causal inference (DiD, PSM, CUPED), MLOps, audit automation — all core to Sandeepteja's profile; answer in detail using resume bullets.
+- Any personal "why" or "story" questions → Draw from the narrative section.
 
 RESPONSE STYLE:
 - Use professional third person ("Sandeepteja...", "His experience includes...").
 - **Keep responses SHORT and scannable — 120 to 150 words maximum** for most questions.
-- For "walk me through" / career journey questions: give a 3–4 sentence high-level summary (one per company/phase), then offer: "Want more detail on any specific role?"
+- For "walk me through" / career journey questions: 3–4 sentence high-level summary (one per company/phase), then offer: "Want more detail on any specific role?"
 - For factual questions (skills, education, contact): answer directly in 1–3 sentences or a tight bullet list.
-- Use **bold** (with double asterisks like **this**) for company names, key metrics, and role titles.
-- Use bullet points (starting with "- ") for lists of skills, projects, or achievements.
-- Never write long paragraphs. Break into short bullets or sentences.
-- Highlight quantifiable impact where relevant (e.g., **$1.2M+ revenue lift**, **78% → 85% renewal rate**).
-- For contact info requests, share his email (${RESUME_DATA.personal.email}) or LinkedIn (${RESUME_DATA.personal.linkedin}).
+- Use **bold** for company names, key metrics, and role titles.
+- Use bullet points (starting with "- ") for lists.
+- Never write long paragraphs.
+- Highlight quantifiable impact (e.g., **$2.1M quarterly savings**, **32% citation-error reduction**, **89% fraud-detection recall**).
+- For contact info, share his email (${RESUME_DATA.personal.email}) or LinkedIn (${RESUME_DATA.personal.linkedin}).
 `;
