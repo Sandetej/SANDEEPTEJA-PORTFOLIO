@@ -128,8 +128,8 @@ const App: React.FC = () => {
           </div>
 
           <p className="text-lg text-slate-400 max-w-xl leading-relaxed border-l-2 border-slate-700 pl-6">
-            Shipping production ML and GenAI for <span className="text-slate-200 font-semibold">risk, fraud, and audit</span>.
-            Specialized in <span className="text-primary-400">Anomaly Detection</span>, <span className="text-primary-400">Causal Inference</span>, and <span className="text-primary-400">LLM Evaluation</span>.
+            Driving <span className="text-slate-200 font-semibold">product analytics</span>, experimentation, and GenAI personalization.
+            Specialized in <span className="text-primary-400">A/B Testing</span>, <span className="text-primary-400">Causal Inference</span>, and <span className="text-primary-400">LLM Evaluation</span>.
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
@@ -185,51 +185,51 @@ const App: React.FC = () => {
                  </div>
                  <div className="flex items-center gap-2 text-xs font-mono text-slate-500">
                    <Terminal size={12} />
-                   <span>fraud_detector.py</span>
+                   <span>ab_experiment.py</span>
                  </div>
                </div>
 
                <div className="space-y-4 font-mono text-xs sm:text-sm text-slate-400 overflow-hidden">
                  <div className="flex">
                     <span className="text-slate-600 w-6">1</span>
-                    <p><span className="text-purple-400">from</span> sklearn.ensemble <span className="text-purple-400">import</span> IsolationForest</p>
+                    <p><span className="text-purple-400">from</span> scipy <span className="text-purple-400">import</span> stats</p>
                  </div>
                  <div className="flex">
                     <span className="text-slate-600 w-6">2</span>
-                    <p><span className="text-purple-400">from</span> dowhy <span className="text-purple-400">import</span> CausalModel</p>
+                    <p><span className="text-purple-400">from</span> cuped <span className="text-purple-400">import</span> variance_reduction</p>
                  </div>
                  <div className="flex">
                     <span className="text-slate-600 w-6">3</span>
-                    <p className="text-slate-500 italic"># Anomaly + causal pipeline</p>
+                    <p className="text-slate-500 italic"># CUPED A/B test on UX variant</p>
                  </div>
                  <div className="flex">
                     <span className="text-slate-600 w-6">4</span>
-                    <p><span className="text-blue-400">class</span> <span className="text-yellow-300">FraudPipeline</span>:</p>
+                    <p><span className="text-blue-400">class</span> <span className="text-yellow-300">Experiment</span>:</p>
                  </div>
                  <div className="flex">
                     <span className="text-slate-600 w-6">5</span>
-                    <p className="pl-4"><span className="text-blue-400">def</span> <span className="text-yellow-300">score</span>(self, txn):</p>
+                    <p className="pl-4"><span className="text-blue-400">def</span> <span className="text-yellow-300">analyze</span>(self, ctrl, var):</p>
                  </div>
                  <div className="flex">
                     <span className="text-slate-600 w-6">6</span>
-                    <p className="pl-8">risk = self.xgb.predict(txn)</p>
+                    <p className="pl-8">lift = variance_reduction(ctrl, var)</p>
                  </div>
                  <div className="flex">
                     <span className="text-slate-600 w-6">7</span>
-                    <p className="pl-8"><span className="text-purple-400">return</span> self.guard(risk)</p>
+                    <p className="pl-8"><span className="text-purple-400">return</span> stats.ttest_ind(lift)</p>
                  </div>
 
                  <div className="mt-6 p-4 bg-slate-950/50 rounded-lg border border-slate-800/80 backdrop-blur-sm">
                     <div className="flex justify-between text-xs mb-2 font-sans text-slate-400">
-                      <span>Fraud Detection Recall</span>
-                      <span className="text-primary-400 font-bold">89% Recall</span>
+                      <span>User Engagement Lift</span>
+                      <span className="text-primary-400 font-bold">+12% vs Control</span>
                     </div>
                     <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
-                      <div className="bg-gradient-to-r from-primary-500 to-blue-500 h-2 rounded-full w-[89%] shadow-[0_0_10px_rgba(20,184,166,0.5)]"></div>
+                      <div className="bg-gradient-to-r from-primary-500 to-blue-500 h-2 rounded-full w-[78%] shadow-[0_0_10px_rgba(20,184,166,0.5)]"></div>
                     </div>
                     <div className="mt-3 flex justify-between text-xs font-sans">
-                        <span className="flex items-center gap-1 text-green-400"><Cpu size={10} /> Latency: &lt;200ms</span>
-                        <span className="flex items-center gap-1 text-blue-400"><Database size={10} /> 90M+ Txns</span>
+                        <span className="flex items-center gap-1 text-green-400"><Cpu size={10} /> p &lt; 0.05</span>
+                        <span className="flex items-center gap-1 text-blue-400"><Database size={10} /> 1M+ Sessions</span>
                     </div>
                  </div>
                </div>
@@ -258,12 +258,12 @@ const App: React.FC = () => {
                  <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Years Experience</div>
                </div>
                <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-blue-500/30 transition-colors">
-                 <div className="text-4xl font-bold text-blue-400 mb-2">$2.1M</div>
-                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Quarterly Fraud Savings</div>
+                 <div className="text-4xl font-bold text-blue-400 mb-2">12%</div>
+                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">User Engagement Lift</div>
                </div>
                <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-700/50 hover:border-purple-500/30 transition-colors">
-                 <div className="text-4xl font-bold text-purple-400 mb-2">89%</div>
-                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Fraud Detection Recall</div>
+                 <div className="text-4xl font-bold text-purple-400 mb-2">14%</div>
+                 <div className="text-sm text-slate-400 font-medium uppercase tracking-wider">Handle Time Reduction</div>
                </div>
             </div>
           </div>

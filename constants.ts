@@ -4,35 +4,35 @@ import { Experience, Project, SkillCategory, Education } from './types';
 export const RESUME_DATA = {
   personal: {
     name: "Sandeepteja Sundara",
-    role: "Data Scientist · Risk Analytics, Anomaly Detection & GenAI for Audit",
-    location: "Chicago, Illinois",
+    role: "Data Scientist · Product Analytics, Experimentation & GenAI Personalization",
+    location: "Seattle, WA",
     email: "sandetej24@gmail.com",
-    phone: "+1 (815) 575-8169",
+    phone: "+1 (779) 775-7725",
     linkedin: "linkedin.com/in/sandeepteja",
     github: "github.com/Sandetej",
     portfolio: "sandeepteja-portfolio.com",
-    summary: "Shipping production ML and GenAI systems for risk analytics, anomaly detection, and audit automation across legal, retail, and financial services — 32% fewer hallucinated citations in a legal-AI compliance control, $2.1M quarterly fraud savings, and 89% recall on financial-crime detection — Python, R, SQL, PySpark, AWS, MLflow, LangChain, LangGraph, DoWhy."
+    summary: "Driving product analytics, user-experience optimization, and GenAI-powered personalization across online travel, e-commerce, and legal AI products — 14% lower handle time on a travel AI agent pilot, 12% churn reduction, 32% fewer hallucinated citations in a production legal-AI product — Python, SQL, PySpark, AWS, Tableau, LangChain, A/B Testing."
   },
   skills: [
     {
       name: "Languages & Data",
-      skills: ["Python", "SQL (CTEs, Window Functions)", "PySpark", "Databricks", "Snowflake", "Airflow", "AWS"]
+      skills: ["Python", "SQL", "PySpark", "Snowflake", "Databricks", "AWS"]
     },
     {
-      name: "Machine Learning & Statistics",
-      skills: ["XGBoost", "Logistic Regression", "scikit-learn", "SHAP", "Hypothesis Testing", "Anomaly Detection", "Feature Engineering"]
+      name: "Statistics & Experimentation",
+      skills: ["A/B Testing", "Power Analysis", "CUPED", "Hypothesis Testing", "Causal Inference (DiD, PSM, Synthetic Control)", "Uplift Modeling", "Success Metrics", "Hypothesis Generation & Prioritization"]
     },
     {
-      name: "Causal Inference & Experimentation",
-      skills: ["A/B Testing", "Power Analysis", "CUPED", "DiD", "Synthetic Control", "PSM"]
+      name: "Machine Learning",
+      skills: ["XGBoost", "Logistic Regression", "scikit-learn", "SHAP", "Feature Engineering", "MLflow"]
     },
     {
-      name: "GenAI & LLMs",
-      skills: ["RAG", "LangChain", "LangGraph", "Multi-Agent Systems", "LLM-as-Judge", "PyTorch", "Hugging Face Transformers"]
+      name: "GenAI & AI/ML Workflows",
+      skills: ["RAG", "LangChain", "LangGraph", "LLM-as-Judge", "Vector Databases", "Hugging Face Transformers"]
     },
     {
-      name: "MLOps & BI",
-      skills: ["MLflow", "Docker", "FastAPI", "Drift Monitoring", "Tableau"]
+      name: "Visualization & Storytelling",
+      skills: ["Tableau", "Pandas", "Matplotlib", "Stakeholder Communication", "Data Storytelling", "Actionable Insights"]
     }
   ] as SkillCategory[],
   experience: [
@@ -41,34 +41,34 @@ export const RESUME_DATA = {
       role: "Data Scientist",
       period: "Aug 2025 – Present",
       description: [
-        "Built an anomaly-detection model in Python (scikit-learn, embedding similarity) flagging hallucinated citations in CoCounsel's legal-research responses in production, cutting citation errors ~32% across 2 practice areas and eliminating a 10-hour/week manual QA step.",
-        "Evaluated 4 prompt and retrieval configurations for a CoCounsel legal-research feature using LLM-as-judge scoring against 300 attorney-labeled queries, identifying the variant that improved answer faithfulness by 11 percentage points before production rollout.",
-        "Designed A/B tests with power analysis and CUPED-style variance reduction on model-driven alert thresholds across 4 product segments, collaborating with product managers to lift alert precision from 68% to 81%.",
-        "Diagnosed class imbalances and labeling gaps across 1M+ semi-structured legal filings using Pandas and SQL (CTEs, window functions), guiding a targeted model retrain that raised classification accuracy by 8 percentage points."
+        "Built an anomaly-detection model in Python (scikit-learn, embedding similarity) flagging hallucinated citations in CoCounsel's production legal-research responses, cutting citation errors ~32% across 2 practice areas and removing a 10-hour/week manual QA step.",
+        "Evaluated 4 prompt and retrieval configurations for a CoCounsel legal-research feature using LLM-as-judge scoring on 300 attorney-labeled queries, picking the variant that lifted answer faithfulness 11 points pre-launch.",
+        "Designed and analyzed A/B tests with power analysis and CUPED variance reduction on 4 CoCounsel UX variants, partnering with product managers to prioritize hypotheses and lift user engagement 12% over control.",
+        "Translated 1M+ user-session logs into actionable insights using SQL (CTEs, window functions) and Pandas, surfacing 3 friction points across the product development lifecycle that informed PM roadmap decisions."
       ]
     },
     {
-      company: "HCL Technologies (Risk & Trust Analytics client)",
+      company: "HCL Technologies (Online Travel & E-commerce client)",
       role: "Data Scientist",
       period: "Apr 2021 – Dec 2023",
       description: [
-        "Built a RAG-based knowledge assistant on LangChain and FAISS over 120K+ internal policy and product documents, deployed in a 2-week pilot that cut compliance-review handle time by 14% across two audit teams.",
-        "Architected a PySpark and Airflow pipeline on Databricks across 4 source systems, processing 90M+ transactions and engineering 45+ behavioral signals that surfaced fraud and control-breakdown patterns at 89% recall for audit review.",
-        "Ran a difference-in-differences and propensity-score-matched quasi-experiment (DoWhy) on 1.2M flagged accounts to isolate fraud-control intervention impact from selection bias, quantifying 6.4% reduction in policy violations adopted by the risk team.",
-        "Trained an XGBoost risk-scoring model on 2.5M transaction records from Snowflake using scikit-learn with SMOTE, hyperparameter tuning, and SHAP, prioritizing 12% more cases for fraud-control review at the same false-positive rate.",
-        "Productionized a fraud scoring service on AWS (SageMaker, S3) via MLflow, Docker, and FastAPI with drift monitoring, automating audit triage on 500K+ daily transactions at sub-200ms latency and saving estimated $2.1M quarterly.",
-        "Fine-tuned DistilBERT on 800K+ support tickets to classify policy-violation and abuse signals, hitting 89% macro-F1 vs 81% GPT-3.5-turbo zero-shot and routing 35% to automated review at sub-50ms p95."
+        "Designed a RAG-based travel Q&A assistant (LangChain, OpenAI embeddings, FAISS) over 120K+ property and itinerary descriptions, A/B piloted to cut customer-service handle time 14% versus control on an online-travel engagement.",
+        "Built a scalable analytics pipeline (PySpark, Airflow, Databricks) over ~90M clickstream and booking events, engineering 45+ behavioral signals that defined success metrics PMs used to optimize the booking funnel.",
+        "Ran a difference-in-differences and propensity-score-matched quasi-experiment (DoWhy) isolating promotional-offer lift across 1.2M travelers, quantifying 6.4% incremental conversion that reallocated the partner's marketing spend.",
+        "Trained an XGBoost ranker on 18M Snowflake session records using scikit-learn, SHAP, and hyperparameter tuning to personalize hotel recommendations, lifting search-to-booking conversion 9% in a 4-week holdout test.",
+        "Operated an AI/ML-driven personalization workflow on AWS scoring 500K+ daily traveler sessions, partnering with PMs to optimize the user experience and contributing an estimated 12% lift in attach revenue.",
+        "Built a Tableau executive dashboard on Snowflake covering funnel drop-off, search-to-book conversion, and segment-level engagement KPIs, surfacing 3 friction points adopted by product managers to prioritize the next quarter's roadmap."
       ]
     },
     {
-      company: "Tata Consultancy Services (Banking Risk & Compliance client)",
+      company: "Tata Consultancy Services (Online Travel & Hospitality client)",
       role: "Associate Data Scientist",
       period: "Jan 2020 – Mar 2021",
       description: [
-        "Identified 3 anomalous transaction segments through hypothesis testing (chi-square, Mann-Whitney U, p below 0.05) on 400K+ records across 5 source systems using Python, surfacing risk patterns for the compliance team.",
-        "Engineered 25+ features (RFM, credit utilization trends) in Pandas for a logistic regression default-risk model on 200K+ loan applications, flagging 9% more early-stage delinquencies feeding the bank's credit-control committee.",
-        "Developed 4 Tableau dashboards tracking loan defaults, NPA ratios, and credit-control breaches, adopted by 4 regional risk managers to replace ad-hoc Excel reporting and accelerate compliance review cycles.",
-        "Partnered with cross-functional risk, finance, and operations stakeholders in Agile sprint reviews to define audit KPIs (NPA ratio, default rate, control coverage), delivering segment insights adopted in Q3 risk-committee reviews."
+        "Identified 3 high-value traveler segments through hypothesis testing (chi-square, Mann-Whitney U, p below 0.05) on 400K+ booking and search records across 5 source systems, directly informing cross-sell targeting for ancillary products.",
+        "Built a logistic-regression cancellation model in Python on 200K+ bookings with 25+ engineered features, delivering actionable recommendations to product managers that reduced traveler churn 9% post-launch.",
+        "Designed 4 Tableau dashboards on traveler conversion, LTV, and engagement KPIs, applying data-storytelling best practices to communicate insights to product and business stakeholders driving 3 UX optimizations.",
+        "Partnered with cross-functional stakeholders in Agile sprint reviews to define KPIs (conversion, cancellation rate, attach rate), delivering segment-level insights to product managers that improved Q3 cross-sell conversion 7%."
       ]
     }
   ] as Experience[],
@@ -132,45 +132,45 @@ export const RESUME_DATA = {
     "Graduate Teaching Assistant (Northern Illinois University): Mentored 130+ students in Python programming and applied machine learning coursework."
   ],
   narrative: {
-    careerJourney: `Sandeepteja's career sits at the intersection of risk analytics, anomaly detection, and applied GenAI — building production ML systems that surface fraud, validate AI outputs, and automate audit workflows.
+    careerJourney: `Sandeepteja's career sits at the intersection of product analytics, experimentation, and applied GenAI — building data products that optimize user experience, personalize journeys, and ship measurable lift to product roadmaps.
 
-**Tata Consultancy Services (Jan 2020 – Mar 2021):** Started as Associate Data Scientist on a banking risk and compliance client. Used hypothesis testing on 400K+ records to surface anomalous transaction segments, engineered 25+ features for a default-risk model on 200K+ loan applications, and built Tableau dashboards adopted by 4 regional risk managers. Foundation in risk modeling, compliance KPIs, and stakeholder communication.
+**Tata Consultancy Services (Jan 2020 – Mar 2021):** Started as Associate Data Scientist on an online travel and hospitality client. Used hypothesis testing on 400K+ booking and search records to surface high-value traveler segments, built a logistic-regression cancellation model on 200K+ bookings, and shipped 4 Tableau dashboards. Foundation in product KPIs, data storytelling, and partnering with PMs.
 
-**HCL Technologies — Risk & Trust Analytics client (Apr 2021 – Dec 2023):** Owned production fraud and audit ML end-to-end. Built a RAG knowledge assistant over 120K+ policy docs, architected a PySpark/Airflow/Databricks pipeline processing 90M+ transactions at 89% recall, ran a DiD + PSM quasi-experiment on 1.2M accounts using DoWhy, and productionized an XGBoost fraud scorer on AWS SageMaker with MLflow + drift monitoring — saving an estimated $2.1M quarterly. Fine-tuned DistilBERT on 800K+ tickets to 89% macro-F1, beating GPT-3.5 zero-shot.
+**HCL Technologies — Online Travel & E-commerce client (Apr 2021 – Dec 2023):** Owned product analytics and personalization end-to-end. Designed a RAG travel Q&A assistant (LangChain + FAISS) that cut handle time 14% in an A/B pilot, built a 90M+ event analytics pipeline (PySpark/Airflow/Databricks), trained an XGBoost ranker lifting search-to-booking conversion 9%, and ran a DiD + PSM quasi-experiment via DoWhy quantifying 6.4% incremental conversion on promotional offers. Operated a personalization workflow scoring 500K+ daily traveler sessions on AWS, contributing 12% attach-revenue lift.
 
-**MS at NIU (Jan 2024 – Dec 2025):** Master's in Computer Science at Northern Illinois University to deepen formal training in causal inference, ML, and GenAI evaluation methods.
+**MS at NIU (Jan 2024 – Dec 2025):** Master's in Computer Science at Northern Illinois University to deepen formal training in experimentation, causal inference, and GenAI evaluation methods.
 
-**Thomson Reuters (Aug 2025 – Present):** Data Scientist working on legal AI compliance. Built an anomaly-detection model flagging hallucinated citations in CoCounsel production traffic — cutting citation errors ~32% and eliminating a 10-hour/week manual QA step. Runs LLM-as-judge prompt/retrieval evaluations and CUPED-style A/B tests on alert thresholds.`,
+**Thomson Reuters (Aug 2025 – Present):** Data Scientist on CoCounsel legal AI. Built an anomaly-detection model flagging hallucinated citations in production — cutting citation errors ~32%. Runs A/B tests with CUPED variance reduction on UX variants lifting engagement 12%, evaluates prompt/retrieval configs with LLM-as-judge, and translates 1M+ session logs into PM roadmap insights.`,
 
-    whyMasters: `After 4 years in industry building risk and fraud ML, Sandeepteja recognized a gap in formal causal inference and modern GenAI evaluation methods. He had shipped DiD, PSM, and DoWhy in production but wanted deeper theoretical grounding in CUPED, synthetic control, LLM-as-judge evaluation, and multi-agent system design. He chose Northern Illinois University's MS in Computer Science specifically for coursework in statistics, ML, and applied AI. Graduated December 2025.`,
+    whyMasters: `After 4 years in industry building product analytics and personalization, Sandeepteja recognized a gap in formal experimentation theory and modern GenAI evaluation methods. He had shipped A/B tests, DiD, and PSM in production but wanted deeper grounding in CUPED variance reduction, uplift modeling, LLM-as-judge evaluation, and agentic AI design. He chose Northern Illinois University's MS in Computer Science specifically for coursework in statistics, ML, and applied AI. Graduated December 2025.`,
 
-    careerGoal: `Sandeepteja is focused on full-time Data Scientist roles in risk analytics, anomaly detection, fraud, trust & safety, audit automation, or GenAI evaluation — domains where causal inference and LLM observability matter. He wants to own production ML systems end-to-end: from anomaly detection model design through A/B testing, drift monitoring, and stakeholder rollout.`,
+    careerGoal: `Sandeepteja is focused on full-time Data Scientist II / Product Analytics roles — domains where experimentation rigor, causal inference, user-experience optimization, and GenAI personalization matter. He wants to own product analytics end-to-end: hypothesis generation, A/B test design, causal validation, and translating findings into PM roadmap decisions.`,
 
-    workStyle: `Sandeepteja owns ML systems end-to-end — anomaly detection design, causal validation (DiD, PSM, CUPED), production deployment (MLflow, Docker, FastAPI on AWS), and drift monitoring. He documents assumptions, validates statistically, and ships systems that sustain themselves. Strong cross-functional communicator: collaborates with product managers on alert thresholds, presents to risk committees, and partners with audit teams to define KPIs (NPA ratio, default rate, control coverage).`,
+    workStyle: `Sandeepteja partners closely with product managers — hypothesis generation, prioritization, A/B test design with power analysis and CUPED variance reduction, and turning model outputs into roadmap insights. He documents assumptions, validates causally (DiD, PSM, Synthetic Control), and ships dashboards that PMs actually use. Strong data storyteller: translates 1M+ session logs into 3 friction points, not 30-tab spreadsheets.`,
 
     workAuthorization: `On F1 OPT with full work authorization for the next 3 years — no sponsorship required during this period. Plans to pursue O1 visa based on professional contributions afterward. Zero visa friction; can start immediately.`,
 
     companyStories: {
       thomsonReuters: {
-        situation: "CoCounsel's legal-research responses occasionally produced hallucinated citations, forcing a 10-hour/week manual QA step and limiting attorney trust in AI-generated outputs.",
-        task: "Build an anomaly-detection layer to flag hallucinated citations in production, evaluate prompt/retrieval variants rigorously, and tune model-driven alert thresholds via A/B testing.",
-        action: "Built a Python anomaly-detection model using scikit-learn and embedding similarity. Evaluated 4 prompt/retrieval configurations using LLM-as-judge against 300 attorney-labeled queries. Designed A/B tests with power analysis and CUPED variance reduction on alert thresholds across 4 product segments. Diagnosed class imbalances on 1M+ legal filings using Pandas and SQL window functions.",
-        result: "Cut citation errors ~32% across 2 practice areas. Eliminated 10-hour/week manual QA. Improved answer faithfulness by 11 percentage points. Lifted alert precision from 68% to 81%. Raised classification accuracy by 8 percentage points after targeted retrain.",
-        keyLesson: "LLM observability needs the same rigor as classical ML monitoring — embeddings + anomaly detection + LLM-as-judge gives a measurable feedback loop for production GenAI."
+        situation: "CoCounsel's legal-research responses occasionally produced hallucinated citations, forcing a 10-hour/week manual QA step and limiting attorney trust in AI-generated outputs. Product team also needed rigorous UX experimentation to prioritize roadmap.",
+        task: "Build an anomaly-detection layer to flag hallucinated citations, evaluate prompt/retrieval variants, design A/B tests on UX variants, and translate session logs into PM-actionable insights.",
+        action: "Built a Python anomaly-detection model using scikit-learn and embedding similarity. Evaluated 4 prompt/retrieval configurations using LLM-as-judge against 300 attorney-labeled queries. Designed A/B tests with power analysis and CUPED variance reduction on 4 CoCounsel UX variants. Translated 1M+ user-session logs into actionable insights using SQL window functions and Pandas.",
+        result: "Cut citation errors ~32% across 2 practice areas. Eliminated 10-hour/week manual QA. Lifted answer faithfulness 11 points pre-launch. Lifted user engagement 12% over control. Surfaced 3 friction points across the product development lifecycle that informed PM roadmap.",
+        keyLesson: "LLM observability + product analytics share the same playbook — embeddings/LLM-as-judge give measurable feedback loops, while CUPED A/B tests prove which UX variants actually move engagement."
       },
       hcl: {
-        situation: "Risk & Trust Analytics client needed to scale fraud detection and audit triage across 90M+ transactions with manual review bottlenecks and selection bias contaminating intervention measurements.",
-        task: "Build production fraud scoring, behavioral signal pipelines, and rigorous causal evaluation of fraud-control interventions.",
-        action: "Built a LangChain + FAISS RAG assistant over 120K+ policy docs. Architected PySpark + Airflow + Databricks pipeline across 4 source systems processing 90M+ transactions with 45+ engineered behavioral signals. Ran DiD + PSM quasi-experiment via DoWhy on 1.2M flagged accounts. Trained XGBoost on 2.5M Snowflake records with SMOTE, hyperparameter tuning, SHAP. Productionized via MLflow + Docker + FastAPI on AWS SageMaker/S3 with drift monitoring. Fine-tuned DistilBERT on 800K+ tickets.",
-        result: "14% reduction in compliance-review handle time. 89% recall for audit review. 6.4% reduction in policy violations causally attributed. 12% more cases prioritized at same false-positive rate. ~$2.1M quarterly savings via sub-200ms triage on 500K+ daily transactions. 89% macro-F1 (beat GPT-3.5 zero-shot 81%).",
-        keyLesson: "Production fraud ML is causal inference plus engineering plus stakeholder buy-in — without DoWhy/PSM you'd misattribute selection bias as policy lift, and without MLflow + drift monitoring the model decays silently."
+        situation: "Online travel and e-commerce client needed scalable analytics, personalization, and experimentation across 90M+ clickstream events to optimize funnel conversion and attach revenue.",
+        task: "Build product analytics pipelines, GenAI-powered traveler assistance, personalized recommendations, and causal evaluation of promotional offers.",
+        action: "Designed a LangChain + OpenAI embeddings + FAISS RAG travel Q&A assistant over 120K+ property and itinerary descriptions. Architected PySpark + Airflow + Databricks pipeline over ~90M clickstream/booking events with 45+ behavioral signals. Trained an XGBoost ranker on 18M Snowflake session records. Ran DiD + PSM quasi-experiment via DoWhy on 1.2M travelers. Operated AWS personalization workflow scoring 500K+ daily sessions. Built Tableau executive dashboards on Snowflake.",
+        result: "14% lower handle time via RAG travel assistant. 9% lift in search-to-booking conversion via personalized ranker. 6.4% incremental conversion causally attributed to promotional offers. ~12% attach-revenue lift via personalization. 3 friction points surfaced and adopted into next-quarter PM roadmap.",
+        keyLesson: "Product analytics at scale is causal inference + engineering + storytelling — without DoWhy/PSM you'd misattribute promotional lift to selection bias, and without Tableau exec dashboards PMs can't act on the findings."
       },
       tcs: {
-        situation: "Banking risk & compliance client made decisions from ad-hoc Excel reporting with no systematic anomaly surfacing or default-risk modeling on 200K+ loan applications.",
-        task: "Surface anomalous transaction segments, build a default-risk model, and replace Excel reporting with monitored compliance dashboards.",
-        action: "Ran chi-square and Mann-Whitney U hypothesis tests on 400K+ records across 5 source systems. Engineered 25+ features (RFM, credit utilization) for a logistic regression default-risk model. Built 4 Tableau dashboards tracking NPA ratios, defaults, control breaches. Partnered with risk/finance/ops in Agile sprint reviews to define audit KPIs.",
-        result: "Surfaced 3 anomalous transaction segments adopted by compliance. 9% more early-stage delinquencies flagged. Dashboards adopted by 4 regional risk managers. Segment insights adopted in Q3 risk-committee reviews.",
-        keyLesson: "Risk analytics is 30% statistics, 70% stakeholder trust — getting risk managers to retire Excel for Tableau matters as much as model AUC."
+        situation: "Online travel & hospitality client needed traveler segmentation, cancellation modeling, and product KPI dashboards to drive cross-sell and reduce churn.",
+        task: "Surface high-value traveler segments, build a cancellation model, design product dashboards, and partner with PMs to define KPIs.",
+        action: "Ran chi-square and Mann-Whitney U hypothesis tests on 400K+ booking and search records across 5 source systems. Built a logistic-regression cancellation model on 200K+ bookings with 25+ engineered features. Designed 4 Tableau dashboards on conversion, LTV, and engagement KPIs. Partnered with cross-functional stakeholders in Agile sprint reviews.",
+        result: "Identified 3 high-value traveler segments informing cross-sell targeting. 9% reduction in traveler churn post-launch. 3 UX optimizations driven by dashboard insights. 7% lift in Q3 cross-sell conversion.",
+        keyLesson: "Product analytics is 30% statistics, 70% data storytelling — getting PMs to act on segment insights matters as much as model AUC."
       }
     },
 
@@ -195,7 +195,7 @@ ${JSON.stringify(RESUME_DATA, null, 2)}
 
 STRICT RULES:
 - IMPORTANT: Sandeepteja has ALREADY GRADUATED. He completed his MS in Computer Science at Northern Illinois University in December 2025. Never say he is "currently pursuing" or "enrolled in" his Master's — always say he "completed" or "graduated" (Dec 2025).
-- IMPORTANT: Sandeepteja's current role is Data Scientist at Thomson Reuters (Aug 2025 – Present), focused on legal AI risk analytics, anomaly detection of hallucinated citations, and LLM evaluation in CoCounsel.
+- IMPORTANT: Sandeepteja's current role is Data Scientist at Thomson Reuters (Aug 2025 – Present), focused on CoCounsel legal-AI product analytics, A/B experimentation, LLM-as-judge evaluation, and translating session logs into PM roadmap insights.
 - ONLY answer questions directly related to Sandeepteja: his skills, experience, projects, education, achievements, career story, motivations, goals, work authorization, and contact information.
 - If asked anything unrelated to Sandeepteja or his background (general knowledge, coding help, other people, opinions, etc.), respond: "I can only answer questions about Sandeepteja. Feel free to ask about his career journey, skills, projects, or experience!"
 - Never hallucinate skills, experiences, or facts not present in the data above.
